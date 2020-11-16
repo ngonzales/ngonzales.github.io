@@ -1,0 +1,366 @@
+	*{margin : 0}
+
+/*** GLOBAL **********************************************************************************************************/
+
+	body {
+		/*overflow : hidden;*/
+		background-color : black;
+		perspective : 8px;
+
+	}
+	@media (max-width:1000px){
+		.hide {
+			
+			display : none !important;
+		}
+
+	}
+	#container {
+	    overflow-y: scroll;
+		perspective : 8px;
+		height : 100%;
+	}
+
+	.soup {
+		display : flex;
+		flex-direction : column;
+		width : 80px;
+	}
+
+	section {
+		width : 100%;
+
+		scroll-snap-align: start;
+	}
+	header {
+	 	height : 100px;
+		/*padding : 0 calc(20% + 80px);*/
+		/*margin : auto;*/
+	}
+
+	nav {
+		/*margin : 0 10px 0 10px; */
+  		font-size: 20px;
+		/*position : absolute;*/
+		width : 100%;
+		text-align: center;
+		/*margin : 0 100px;*/
+	}
+
+	@media (max-width : 1300px) {
+		nav {
+			font-size : 14px;
+		}
+	}
+ /** Parallax ****************************************************************************************************/
+
+	.parallax {
+		perspective: 1px;
+		height: 100vh;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+	.parallax_layer {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.parallax_group {
+		position: relative;
+		height: 100vh;
+		transform-style: preserve-3d;
+	}
+
+	.back {
+		transform: translateZ(-1px) scale(2);
+	}
+
+/** Grid ********************************************************************************************************/
+
+	.left {
+		justify-self : end;
+		grid-area : left;
+		/*padding-left : 20%;*/
+	}
+	.right {
+		justify-self : start;
+		right : 0;
+		grid-area : right;
+		/*padding-right : 20%;*/
+	}
+	.grid {
+		display : grid;
+		grid-template-columns : auto min(1000px, calc(100vw - 160px)) auto;
+		grid-template-areas  : "left middle right";
+	}
+
+/*** FRONT PAGE ******************************************************************************************************/
+
+	.frontTop {
+		background-color : rgb(253,111,39);
+		height : 20px;
+		border-bottom : 5px solid black;
+
+
+	}
+	.main {
+	}
+
+	.mainNav {
+		border-bottom: 1px solid white;
+		border-top   : 1px solid white;
+		background-color : black;
+		color : white;
+		text-decoration: none;
+		display: inline-block;
+		margin : auto;
+		padding : 5px;
+	}
+
+	.truss {
+		background-color : rgb(101,99,102);
+	}
+	.sawn {
+		background-color : rgb(200,200,200);
+	}
+	.viga {
+		background-color : rgb(199,207,168);
+	}
+	.viga {
+		background-color : rgb(101,99,102);
+	}
+	.latilla {
+		background-color : rgb(255,255,255);
+	}
+	.corbel {
+		background-color : rgb(0,0,0);
+	}
+	.carving {
+		background-color : rgb(255,255,255);
+	}
+	.other {
+		background-color : rgb(101,99,102);
+	}
+	.contact {
+		background-color : rgb(0,0,0);
+	}
+	.lumberHeader {
+		background-color : rgb(204,152,102);
+	}
+	.trussHeader {
+		border-bottom : 10px solid black;
+		border-top    : 10px solid black;
+
+		background-color : rgb(253,111,39);
+	}
+	.vigaHeader {
+		background-color : rgb(89,165,93);
+	}
+	.doorHeader {
+		background-color : rgb(194,69,23);
+	}
+	.latillaHeader {
+		background-color : rgb(225,174,95);
+	}
+	.corbelHeader {
+		background-color : rgb(199,169,167);
+	}
+	.carvingHeader {
+		background-color : rgb(157,3,3);
+	}
+	.otherHeader {
+		background-color : rgb(23,137,226);
+	}
+	.contactHeader {
+		background-color : rgb(227,45,102);
+	}
+
+
+	hr {
+		color : black;
+		background-color : black;
+		height : 10px;
+		border-width: 0px;
+
+	}
+
+	p {
+		color : white;
+	}
+
+	/*{ TODO : Change to not use span}*/
+
+
+	.trussImg {
+		background-image : url("asset/trussHomeMain.jpg");
+		background-size: cover;
+		background-position: center;
+		/*grid-column : 2/4;*/
+	}
+
+	.varible {
+		/*padding : 0 160px 0 160px;*/
+		/*padding : 0 calc(20% + 80px) 0 calc(20% + 80px);*/
+		/*display : grid;*/
+		/*grid-template-columns: repeat(auto-fill, minmax(600px, 50%));*/
+		display : flex;
+		flex-flow : row wrap;
+		justify-content: flex-start;
+		/*justify-content: flex-start;*/
+	}
+	
+
+	.info {	
+		/*height : 80vh;*/
+		/*width : 20vw;*/
+		width   : 1000px;
+		padding :  10px;
+		margin  : auto;
+		/*margin-top : 25%;*/
+		/*padding  : 2%;*/
+		/*display : flex;*/
+		/*justify-content : center;*/
+	}
+
+	.infoBackground {
+		background: black;
+		border-radius  : 25px;
+		/*height : 100%;*/
+
+	}
+
+
+
+	.infoImage {
+		max-width:90%;
+		max-height:100%;
+	}
+
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		/*width: 50%;*/
+	}
+	
+	.fitHeight {
+		height : 50%;
+		justify-self: start;
+		/*display : block;*/
+		/*margin : auto;*/
+
+	}
+
+	.link {
+		position:absolute; 
+		width:100%;
+		height:100%;
+		top:0;
+		left: 0;
+		/*z-index: 1;*/
+	}
+		.trussGrid {
+			display : grid;
+			grid-template-columns : auto 700px 300px auto;
+			grid-template-areas  : "left picture text right";
+		}
+		.vigaGrid {
+			display : grid;
+			grid-template-columns : auto 700px 300px auto;
+			grid-template-areas  : "left picture text right";
+		}
+		.doorGrid {
+			display : grid;
+			grid-template-columns : auto 700px 300px auto;
+			grid-template-areas  : "left picture text right";
+		}
+		.latillaGrid {
+			display : grid;
+			grid-template-columns : auto 1000px auto;
+			grid-template-areas  : "left picture right"
+			                        ".   text    .";
+		}
+		.carvingGrid {
+			display : grid;
+			grid-template-columns : auto 700px 300px auto;
+			grid-template-areas  : "left picture text right";
+		}
+		.corbelGrid {
+			display : grid;
+			grid-template-columns : auto 700px 300px auto;
+			grid-template-areas  : "left picture text right";
+		}
+		.otherGrid {
+			display : grid;
+			grid-template-columns : auto 500px 500px auto;
+			grid-template-areas  : "left pic1 pic2 right"
+			                       ".    pic1 text ."
+			                       ".    pic1 pic3 .";
+		}
+		.contactGrid {
+			display : grid;
+			grid-template-columns : auto 500px 500px auto;
+			grid-template-areas  : "left map   map right"
+			                       ".    text1 pic1 ."
+			                       ".    text2 pic1 .";
+		}
+		
+		.middle {
+			grid-area : middle;
+		}
+		.map {
+			grid-area : map;
+		}
+		.picture {
+			grid-area : picture;
+		}
+		.pic1 {
+			grid-area : pic1;
+		}
+		.pic2 {
+			grid-area : pic2;
+		}
+		.pic3 {
+			grid-area : pic3;
+		}
+
+		.text {
+			grid-area : text;
+		}
+		.text1 {
+			grid-area : text1;
+		}
+		.text2 {
+			grid-area : text2;
+		}
+		.textBackground {
+			align-self : start;
+			font-size : 30px;
+			background: black;
+			border-radius  : 25px;
+			margin : 30px 0 0 0 ;
+			padding : 10px;
+
+		}
+	.mainHeader {
+		background-color : rgb(0,0,0);
+		display : grid;
+		grid-template-columns : auto 200px 600px 200px auto;
+		grid-template-areas  : "gutter skel1 middle skel2 gutter2";
+	}
+	.skel1 {grid-area : skel1;}
+	.skel2 {grid-area : skel2;}
+/*** TRUSS PAGE ******************************************************************************************************/
+/*** VIGAS PAGE ******************************************************************************************************/
+/*** LATILLAS PAGE ***************************************************************************************************/
+/*** ROUGH SAWN PAGE *************************************************************************************************/
+/*** CORBELS PAGE ****************************************************************************************************/
+/*** CARVINGS PAGE ***************************************************************************************************/
+/*** DOORS PAGE ******************************************************************************************************/
+/*** OTHER PRODUCTS PAGE *********************************************************************************************/
+/*** CONTACT US PAGE *************************************************************************************************/
+
+ 
