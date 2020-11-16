@@ -1,15 +1,15 @@
 
 	let links = [
-		{name : "Home"           , href : "index.html"    , pathName : "home"    },
-		{name : "Trusses"        , href : "truss.html"   , pathName : "truss"   },
-		{name : "Vigas"          , href : "viga.html"    , pathName : "viga"    },
-		{name : "Latillas"       , href : "latilla.html", pathName : "latillas"},
-		{name : "Rough Sawn"     , href : "sawn.html"    , pathName : "sawn"    },
-		{name : "Corbels"        , href : "corbel.html"  , pathName : "corbel"  },
-		{name : "Carvings"       , href : "carving.html" , pathName : "carving" },
-		{name : "Doors"          , href : "door.html"    , pathName : "door"    },
-		{name : "Other Products" , href : "other.html"   , pathName : "other"   },
-		{name : "Contact Us"     , href : "contact.html" , pathName : "contact" },
+		{name : "Home"           , href : "index.html"   , pathName : "Home"    },
+		{name : "Trusses"        , href : "truss.html"   , pathName : "Truss"   },
+		{name : "Vigas"          , href : "viga.html"    , pathName : "Viga"    },
+		{name : "Latillas"       , href : "latilla.html" , pathName : "Latillas"},
+		{name : "Rough Sawn"     , href : "sawn.html"    , pathName : "Sawn"    },
+		{name : "Corbels"        , href : "corbel.html"  , pathName : "Corbel"  },
+		{name : "Carvings"       , href : "carving.html" , pathName : "Carving" },
+		{name : "Doors"          , href : "door.html"    , pathName : "Door"    },
+		{name : "Other Products" , href : "other.html"   , pathName : "Other"   },
+		{name : "Contact Us"     , href : "contact.html" , pathName : "Contact" },
 	];
 
 	let initNav = className => {
