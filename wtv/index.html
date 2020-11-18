@@ -20,7 +20,9 @@
 		<div class = parallax_group>
 			<div class = "back parallax_layer">
 				<hr class = "frontTop">
-				<nav id = "mainNav" ></nav>
+				<div class = "grid">
+				<nav class = "middle frontNav1"></nav>
+				</div>
 				<section class = "main">
 					<div class = "mainHeader">
 						<img src = "asset/mainHeader1.png" class = "center hide skel1">
@@ -32,7 +34,10 @@
 
 				<section class = "truss">
 					<div class = "grid trussHeader">
-						<header class = "middle"><img src = "asset/trussHeader.png"></header>
+						<header class = "middle">
+							<img src = "asset/trussHeader.png">
+						</header>
+						
 					</div>
 					<div class = trussGrid>
 						<span class = "picture">
@@ -60,7 +65,7 @@
 					.sawn1 {
 						display : block;
 						position : absolute;
-						top : 0; left : 0;
+						top : 30px; left : 0;
 						width : 550px;
 
 					}
@@ -68,7 +73,7 @@
 						font-size : 23px;
 						display : block;
 						position : absolute;
-						top : 0; right : 60px;
+						top : 30px; right : 60px;
 						width : 325px;
 						/*height : 700px;*/
 					}
@@ -95,15 +100,72 @@
 					.relative {
 						position : relative;
 					}
+					.sawnNav {
+						display : inline;
+						font-size: 18px;
+						width : 80%;
+						/*margin : 0 20px;*/
+						/*margin : 0 10%;*/
+						text-align: center;
+						/*top : 0;*/
+						/*border-bottom: 1px solid white;*/
+						/*border-top   : 1px solid white;*/
+					}
+					.sawnNavInner {
+						/*border-bottom: 1px solid white;*/
+						/*border-top   : 1px solid white;*/
+						/*background-color : black;*/
+						color : black;
+						text-decoration: none;
+						display: inline-block;
+						margin : auto;
+						padding : 5px;
+					}
+					.sawnNavInner:hover {
+						color : gray;
+					}
+
+					.whiteNav {
+						display : inline;
+						font-size: 18px;
+						width : 80%;
+						/*margin : 0 20px;*/
+						/*margin : 0 10%;*/
+						text-align: center;
+						/*top : 0;*/
+						/*border-bottom: 1px solid white;*/
+						/*border-top   : 1px solid white;*/
+					}
+					.whiteNavInner {
+						/*border-bottom: 1px solid white;*/
+						/*border-top   : 1px solid white;*/
+						/*background-color : black;*/
+						color : white;
+						text-decoration: none;
+						display: inline-block;
+						margin : auto;
+						padding : 5px;
+					}
+					.whiteNavInner:hover {
+						color : gray;
+					}
+
+
+
+					.inline {
+						display : inline;
+					}
 				</style>
 				<section class = "sawn">
 					<hr>
 					<div class = "grid lumberHeader">
-						<header class = "middle"><img src = "asset/lumberHeader.png"></header>
+						<header class = "middle sawnNav"><img src = "asset/lumberHeader.png"></header>
 					</div>
 					<hr>
 					<div class = "grid sawn">
 						<div class = "middle relative">
+							<nav class = "sawnNav"></nav>
+
 							<span class = "sawn1">
 								<img src = "asset/lumber1.jpg" class = "sawnimg">
 							</span>
@@ -134,8 +196,11 @@
 				<section class = "viga">
 					<hr>
 					<div class = "grid vigaHeader">
-					<header class = "middle"><img src = "asset/vigaHeader.png" class = ""></header>
-					</div>
+						<header class = "middle">
+							<img src = "asset/vigaHeader.png" class = "inline">
+							<nav class = "sawnNav inline"></nav>
+							</header>
+						</div>
 					<hr>
 					<div class = vigaGrid>
 						<span class = "picture">
@@ -158,7 +223,10 @@
 				<section class = "door">
 					<hr>
 					<div class = "grid doorHeader">
-						<header class = "middle"><img src = "asset/doorHeader.png" class = ""></header>
+						<header class = "middle">
+							<img src = "asset/doorHeader.png" class = "inline">
+							<nav class = "sawnNav inline" style = "color:white"></nav>
+						</header>
 					</div>
 					<hr>
 					<div class = doorGrid>
@@ -182,7 +250,11 @@
 					<div class = "grid latillaHeader">
 						<header class = "middle"><img src = "asset/latillaHeader.png"></header>
 					</div>
+
 					<hr>
+					<div class = grid>
+						<nav class = "middle sawnNav inline"></nav>
+					</div>
 					<div class = latillaGrid>
 						<span class = "picture">
 								<img src = "asset/latillaHomeMain.jpg">
@@ -205,6 +277,9 @@
 					<header class = "middle"><img src = "asset/corbelHeader.png"></header>
 					</div>
 					<hr>
+					<div class = grid>
+						<nav class = "middle whiteNav inline"></nav>
+					</div>
 					<div class = "corbelGrid">
 						<span class = picture>
 							<img src = "asset/corbelHomeMain.jpg" class = "">
@@ -227,6 +302,9 @@
 						<header class = "middle"><img src = "asset/carvingHeader.png"></header>
 					</div>
 					<hr>
+					<div class = grid>
+						<nav class = "middle sawnNav inline"></nav>
+					</div>
 					<div class = carvingGrid>
 						<span class = "picture">
 								<img src = "asset/carvingHomeMain.jpg" >
@@ -249,6 +327,9 @@
 					<header class = "middle"><img src = "asset/otherHeader.png"></header>
 					</div>
 					<hr>
+					<div class = grid>
+						<nav class = "middle whiteNav inline"></nav>
+					</div>
 					<div class = "otherGrid">
 						<span class = "pic1">
 							<img src = "asset/otherHomeMain.jpg" class = "gridimg">
@@ -274,7 +355,7 @@
 				<section class = "contact">
 					<hr>
 					<div class = "grid contactHeader">
-					<header class = "middle"><h>Contact Us</h></header>
+					<header class = "middle"><h style = "margin : 0 20px;font-size : 40px">Contact Us</h></header>
 					</div>
 					<hr>
 					<div class = "contactGrid">
@@ -284,7 +365,7 @@
 						</span>
 						<span class = "text1">
 							<div class = "infoBackground">
-								<p>
+								<p style = "font-size : 60px">
 									300 Calle industrial
 									Bernalillo, NM 87004
 									505-867-1200					
@@ -295,7 +376,7 @@
 								<img src = "asset/contactHomeSub.png" class = "center contactImage">
 						</span>
 						<span class = "text2">
-							<ul style = "color:white">
+							<ul style = "color:white; font-size : 40px">
 								<li>Monday    8am-5pm</li>
 								<li>Tuesday   8am-5pm</li>
 								<li>Wednesday 8am-5pm</li>
@@ -319,7 +400,7 @@
 
 	<script src = "nav.js"></script>
 	<script>
-		initNav("mainNav");
+		initNav("frontNav1inner");
 		initSoup(false);
 	</script>
 

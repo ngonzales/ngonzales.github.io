@@ -12,15 +12,20 @@
 		{name : "Contact Us"     , href : "contact.html" , pathName : "Contact" },
 	];
 
-	let initNav = className => {
-		let mainNav = document.getElementById("mainNav");
-
-		for (let link of links) {
-			let a = document.createElement("a");
-			a.href = link.href;
-			a.innerText = link.name;
-			a.classList.add(className);
-			mainNav.appendChild(a);
+	let initNav = () => {
+		// let mainNav = document.getElementById("mainNav");
+		// let mainNav = document.getElementById("mainNav");
+		let navs = document.getElementsByTagName("nav");
+		for (let nav of navs) {
+			let className = [...nav.classList].filter(name=>name.includes("Nav"));
+			for (let link of links) {
+				// console.log(nav.classList.values().filter(name=>name.contains(nav)));
+				let a = document.createElement("a");
+				a.href = link.href;
+				a.innerText = link.name;
+				a.classList.add(className+"Inner");
+				nav.appendChild(a);
+			}
 		}
 	}
 
@@ -73,7 +78,6 @@
 			// var h = document.body.scrollHeight;
 			if (h!==lastHeight) placeSoup();
 			lastHeight = h;
-			console.log(h);
 		}; f();
 			
 		
