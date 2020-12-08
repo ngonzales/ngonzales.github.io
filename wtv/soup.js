@@ -1,0 +1,66 @@
+
+	// <div id = "parallax" class = "grid abs" style = "height : 0px;">
+	// 	<div class = "left  soupContainer"></div>
+	// 	<div class = "right soupContainer"></div>
+	// </div>
+	
+		
+let initSoup = (invert) => {
+
+	let names = ["Home","Lumber","Viga","Door","Latillas","Corbel","Carving","Other","Contact"]
+	// let parallax = document.getElementById("parallax");
+	let parallax = document.createElement("div");
+	parallax.classList.add("grid");
+	parallax.setAttribute("id","parallax");
+	// let soupContainers = document.getElementsByClassName("soupContainer");
+	let soupContainers = [document.createElement("div"),document.createElement("div")]
+	soupContainers.forEach(soup=>soup.classList.add("soupContainer"));
+	soupContainers[0].classList.add("left");
+	soupContainers[1].classList.add("right");
+	soupContainers.forEach(soup=>parallax.appendChild(soup));
+	document.documentElement.appendChild(parallax);
+	let scrollMod = .5;
+	window.addEventListener('scroll',(e) => {
+		let scroll = window.pageYOffset;
+		parallax.style.top = -(scroll*scrollMod)+"px";
+	});
+	let h = document.documentElement.scrollHeight/100*1.5;
+	let soupHeight = 120;
+	let drawSoup = () => {
+		for (let soup of soupContainers) {
+		while (soup.firstChild) {
+			soup.removeChild(soup.firstChild);
+		}
+		}
+		for (let i=0;i<h-1;++i){
+			for (let soupContainer of soupContainers) {
+				let a = document.createElement("a");
+				a.href = names[i%names.length].toLocaleLowerCase()+".html";
+				a.classList.add("soup");
+				let img = new Image();
+				// img.src = "asset/soupCarving.png";
+				if( invert)img.src = "asset/soupInverse"+names[i%names.length]+".png";
+				else       img.src = "asset/soup"      +names[i%names.length]+".png";
+				img.height = soupHeight;
+				if (invert) {
+					a.onmouseout   = e => e.target.src = "asset/soupInverse"+names[i%names.length]+".png";
+					a.onmouseover  = e => e.target.src = "asset/soup"       +names[i%names.length]+".png";
+				} else {
+					a.onmouseover = e => e.target.src = "asset/soupInverse"+names[i%names.length]+".png";
+					a.onmouseout  = e => e.target.src = "asset/soup"       +names[i%names.length]+".png";
+				}
+				a.appendChild(img);
+				soupContainer.appendChild(a);
+			}
+		}
+	}
+
+	let f = () => {
+		requestAnimationFrame(f);
+		let t = document.documentElement.scrollHeight
+		if (h !=((t/(soupHeight+4))+((t-innerHeight)/(soupHeight+4)*scrollMod))) {
+			h = ((t/(soupHeight+4))+((t-innerHeight)/(soupHeight+4)*scrollMod));
+			drawSoup();
+		}
+	}; f();
+}

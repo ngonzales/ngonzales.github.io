@@ -1,0 +1,81 @@
+<html>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="galleryStyle.css">
+	<div id = modal></div>
+	<style>
+		section {
+			min-height : 800px;
+		}
+		header {
+			min-height : 40px;
+		}
+		.vl {
+			border-right: 2px solid #fd5c0a;
+		}
+		.nav {
+			font-family : Arial;
+			color : yellow;
+			text-decoration: none;
+			font-weight: bold;
+			font-size : 20px;
+		}
+		.nav:hover {
+			color : orange;
+		}
+		.orange {
+			color : orange;
+		}
+		.orange:hover {
+			color : pink;
+		}
+	</style>
+	<header class = "grid" style = "background-color : #ac2794; border-bottom: 10px solid #0008b1; border-top   : 10px solid #0008b1;">
+		<nav class = middle>
+			<div style = "display : flex; width:100%; justify-content : space-evenly">
+				<a class = "nav"        href = "index.html"   >Home          </a><div class = "vl"></div>
+				<a class = "nav orange" href = "truss.html"   >Trusses       </a><div class = "vl"></div>
+				<a class = "nav"        href = "viga.html"    >Vigas         </a><div class = "vl"></div>
+				<a class = "nav"        href = "lumber.html"  >Rough Sawn    </a><div class = "vl"></div>
+				<a class = "nav"        href = "corbel.html"  >Corbels       </a><div class = "vl"></div>
+				<a class = "nav"        href = "carving.html" >Carving       </a><div class = "vl"></div>
+				<a class = "nav"        href = "door.html"    >Doors         </a><div class = "vl"></div>
+				<a class = "nav"        href = "other.html"   >Other Products</a><div class = "vl"></div>
+				<a class = "nav"        href = "contact.html" >Contact Us    </a>
+			</div>
+		</nav>
+	</header>
+	<section class = "grid" style = "background-color : black">
+		<div class = "middle column">
+			<img src = "asset/carving/carving1.png">
+			<img src = "asset/carving/carving2.png">
+		</div>
+
+	</section>
+	<header class = "grid" style = "background-color : #ac2794; border-bottom: 10px solid #781d78; border-top   : 10px solid #781d78;"></header>
+	<section class = "grid" style = "background-color : black">
+		<div class="middle column">
+			<div id = photoGallery></div>
+			<div class="row">
+				<img src = "asset/carving/carving3.png">
+				<div class = column>
+					<img src = "asset/carving/carving4.png">
+					<p style = "color : white">
+						300 Calle Industrial <br>
+						Bernalillo, NM 87004 <br>
+						Phone 505-867-1200 <br>
+						Fax 505-867-5770 
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<header class = "grid" style = "background-color : #ac2794; border-bottom: 10px solid #0008b1; border-top   : 10px solid #0008b1;"></header>
+
+	<script src = gallery.js></script>
+	<script src = soup.js></script>
+	</script>
+	<script>
+		initSoup(true);
+		initGallery("asset/carving/photo/",30);
+	</script>
+</html>

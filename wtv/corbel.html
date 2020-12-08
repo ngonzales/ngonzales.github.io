@@ -1,0 +1,94 @@
+<html>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="galleryStyle.css">
+	<div id = modal></div>
+	<style>
+		section {
+			min-height : 800px;
+		}
+		header {
+			min-height : 40px;
+		}
+		.vl {
+			border-right: 2px solid #fd5c0a;
+		}
+		.nav {
+			font-family : Arial;
+			color : yellow;
+			text-decoration: none;
+			font-weight: bold;
+			font-size : 20px;
+		}
+		.nav:hover {
+			color : orange;
+		}
+		.orange {
+			color : orange;
+		}
+		.orange:hover {
+			color : pink;
+		}
+	</style>
+	<header class = "grid" style = "background-color : #4078cd; border-bottom: 10px solid #5ccc7d; border-top   : 10px solid #5ccc7d;">
+		<nav class = middle>
+			<div style = "display : flex; width:100%; justify-content : space-evenly">
+				<a class = "nav"        href = "index.html"   >Home          </a><div class = "vl"></div>
+				<a class = "nav orange" href = "truss.html"   >Trusses       </a><div class = "vl"></div>
+				<a class = "nav"        href = "viga.html"    >Vigas         </a><div class = "vl"></div>
+				<a class = "nav"        href = "lumber.html"  >Rough Sawn    </a><div class = "vl"></div>
+				<a class = "nav"        href = "corbel.html"  >Corbels       </a><div class = "vl"></div>
+				<a class = "nav"        href = "carving.html" >Carving       </a><div class = "vl"></div>
+				<a class = "nav"        href = "door.html"    >Doors         </a><div class = "vl"></div>
+				<a class = "nav"        href = "other.html"   >Other Products</a><div class = "vl"></div>
+				<a class = "nav"        href = "contact.html" >Contact Us    </a>
+			</div>
+		</nav>
+	</header>
+	<section class = "grid" style = "background : linear-gradient(#34aeef, #94d2f5 50%, #e2b12e 50% 55%, #e2b12e, #ebcf4a)">
+		<div class = "column middle">
+			<img src ="asset/corbel/corbel1.png">
+			<img src ="asset/corbel/corbel2.png">
+			<p>
+				Corbel  [kôrbəl] an architectural bracket usually used to support a structural timber. Most corbels are supported by a post or a wall.
+				<br><br>
+				Starting with sawn timber we produce a wide variety of corbels, cut specifically for your project.
+			</p>
+		</div>
+	</section>
+	<header class = "grid" style = "background-color : #4078cd; border-bottom: 10px solid #5ccc7d; border-top   : 10px solid #5ccc7d;"></header>
+	<section class="grid" style = "background-color : black">
+		<div class = "middle column">
+			<img src ="asset/corbel/corbel3.png">
+			<p style = "color : white">
+				Choose from our corbel patterns or create your own. At Wholesale Timber and Viga we cut all our corbel by the order. We can cut most orders the same day they are ordered.
+			</p>
+		</div>
+	</section>
+	<header class = "grid" style = "background-color : #4078cd; border-bottom: 10px solid #5ccc7d; border-top   : 10px solid #5ccc7d;"></header>	
+	<section class = "grid" style = "background-color : black">
+		<div class = "middle column">
+			<p>
+				Starting with sawn timber we produce a wide variety of corbels, cut specifically for your project.  We can cut any size and any pattern corbel. We can join your corbels to make any angle and we can hand carve into them too.
+			</p>
+			<div class = "row">
+				<img src ="asset/corbel/corbel4.png">
+				<img src ="asset/corbel/corbel5.png">
+				<img src ="asset/corbel/corbel6.png">
+			</div>
+			<p>
+				Photo Gallery
+			</p>
+			<div style = "width : 90%">
+				<div id = "photoGallery"></div>
+			</div>
+		</div>
+	</section>
+	<header class = "grid" style = "background-color : #4078cd; border-bottom: 10px solid #5ccc7d; border-top   : 10px solid #5ccc7d;"></header>	
+	<script src = gallery.js></script>
+	<script src = soup.js></script>
+	</script>
+	<script>
+		initSoup(true);
+		initGallery("asset/corbel/photo/",11);
+	</script>
+</html>

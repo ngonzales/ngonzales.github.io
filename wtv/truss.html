@@ -1,0 +1,90 @@
+<html>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="galleryStyle.css">
+	<div id = modal></div>
+	<style>
+		.vl {
+			border-right: 2px solid #fd5c0a;
+		}
+		.nav {
+			font-family : Arial;
+			color : yellow;
+			text-decoration: none;
+			font-weight: bold;
+			font-size : 20px;
+		}
+		.nav:hover {
+			color : orange;
+		}
+		.orange {
+			color : orange;
+		}
+		.orange:hover {
+			color : pink;
+		}
+	</style>
+	<header class = "grid" style = "background-color : #ac2794; border-bottom: 10px solid black;
+			border-top   : 10px solid black;">
+		<nav class = middle>
+			<div style = "display : flex; width:100%; justify-content : space-evenly">
+				<a class = "nav"        href = "index.html"   >Home          </a><div class = "vl"></div>
+				<a class = "nav orange" href = "truss.html"   >Trusses       </a><div class = "vl"></div>
+				<a class = "nav"        href = "viga.html"    >Vigas         </a><div class = "vl"></div>
+				<a class = "nav"        href = "lumber.html"  >Rough Sawn    </a><div class = "vl"></div>
+				<a class = "nav"        href = "corbel.html"  >Corbels       </a><div class = "vl"></div>
+				<a class = "nav"        href = "carving.html" >Carving       </a><div class = "vl"></div>
+				<a class = "nav"        href = "door.html"    >Doors         </a><div class = "vl"></div>
+				<a class = "nav"        href = "other.html"   >Other Products</a><div class = "vl"></div>
+				<a class = "nav"        href = "contact.html" >Contact Us    </a>
+			</div>
+		</nav>
+	</header>
+	<header  class = "grid" style = "background-color : #fcebc0">
+		<div class = "middle column">
+
+			<img src = "asset/truss/truss1.png"> 
+			<img src = "asset/truss/truss2.png"> 
+		</div>
+	</header>
+
+	<header class = "grid" style = "background-color : #ac2794; border-bottom: 10px solid #350d56;
+			border-top   : 10px solid #350d56;">
+		<p class = middle>PHOTO GALLERY</p>
+	</header>
+	<section class = "grid" style = "background-color : black">
+		<div class = "middle column">
+			<div style = "width : 85%">
+				<div id = "photoGallery"></div>
+			<p style = "color: rgb(252, 235, 192);">
+				Our heavy timber and viga trusses create  a timeless grandeur. We offer designs, simple to complex, that are unsurpassed in appearance. We can also provide all necessary engineering. Come and meet with us today to begin planning your new home or renovation!
+			</p>
+			</div>
+			<img src = "asset/truss/truss3.png">
+			<div class = "row" style = "justify-content : space-evenly; width : 100%;">
+				<p style = "color: rgb(252, 235, 192);">
+					Wholesale Timber & Viga <br>
+					300 Calle Industrial <br>
+					Bernalillo, NM 87004 <br>
+					<br>
+					Phone    505-867-1200 <br>
+					Fax        505-867-5770 <br>
+				</p>
+				<img src = "asset/pricelist.png">
+			</div>
+		</div>
+	</section>
+	<header class = "grid" style = "background-color : #ac2794; border-bottom: 10px solid black;
+			border-top   : 10px solid black;">
+		<p class = middle style = "height: 20px;"></p>
+	</header>
+	<section class = "grid" style = "background-color : #fcebc0; height : 400px;">
+	</section>
+
+	<script src = gallery.js></script>
+	<script src = soup.js></script>
+	</script>
+	<script>
+		initSoup(true);
+		initGallery("asset/truss/photo/",30);
+	</script>
+</html>

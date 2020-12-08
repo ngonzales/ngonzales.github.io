@@ -1,0 +1,76 @@
+<html>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="galleryStyle.css">
+	<div id = modal></div>
+	<style>
+		.vl {
+			border-right: 2px solid #fd5c0a;
+		}
+		.nav {
+			font-family : Arial;
+			color : yellow;
+			text-decoration: none;
+			font-weight: bold;
+			font-size : 20px;
+		}
+		.nav:hover {
+			color : orange;
+		}
+		.orange {
+			color : orange;
+		}
+		.orange:hover {
+			color : pink;
+		}
+	</style>
+	<header class = "grid" style = "background-color : #301e8a; border-bottom: 15px solid #fd1c0a; border-top : 15px solid #fd1c0a;">
+		<nav class = middle>
+			<div style = "display : flex; width:100%; justify-content : space-evenly">
+				<a class = "nav"        href = "index.html"   >Home          </a><div class = "vl"></div>
+				<a class = "nav"        href = "truss.html"   >Trusses       </a><div class = "vl"></div>
+				<a class = "nav orange" href = "viga.html"    >Vigas         </a><div class = "vl"></div>
+				<a class = "nav"        href = "lumber.html"  >Rough Sawn    </a><div class = "vl"></div>
+				<a class = "nav"        href = "corbel.html"  >Corbels       </a><div class = "vl"></div>
+				<a class = "nav"        href = "carving.html" >Carving       </a><div class = "vl"></div>
+				<a class = "nav"        href = "door.html"    >Doors         </a><div class = "vl"></div>
+				<a class = "nav"        href = "other.html"   >Other Products</a><div class = "vl"></div>
+				<a class = "nav"        href = "contact.html">Contact Us    </a>
+				
+			</div>
+		</nav>
+	</header>
+	<header  class = "grid" style = "background-color : white">
+		<div class = "middle column">
+
+			<img src = "asset/viga/viga1.png"> 
+		</div>
+	</header>
+
+	<header class = "grid" style = "background-color : #301e8a; border-bottom: 20px solid #fd1c0a; border-top : 20px solid #fd1c0a;">
+		<p class = middle style = "color : #fdde01;font-size :66px;margin:auto;padding : 5">Photo Gallery</p>
+	</header>
+	<section class = "grid" style = "background-color : black">
+		<div id = "photoGallery" class = "middle"></div>
+	</section>
+	<header class = "grid" style = "background-color : #301e8a; border-bottom: 10px solid #fd1c0a; border-top : 10px solid #fd1c0a;">
+
+		<p class = middle>blank</p>
+	</header>
+	<section class = "grid" style = "background-color : black">
+	</section>
+	<header class = "grid" style = "background-color : #301e8a; border-bottom: 10px solid #fd1c0a; border-top : 10px solid #fd1c0a;">
+		BLARG
+	</header>
+	<section class = "grid" style = "background-color : black">
+
+
+
+
+
+	<script src = gallery.js></script>
+	<script src = soup.js></script>
+	<script>
+		initGallery("asset/viga/photo/",15);
+		initSoup();
+	</script>
+</html>
