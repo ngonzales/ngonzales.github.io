@@ -21,10 +21,12 @@
 		flex-direction : column;
 		width : 80px;
 	}
+	.soupImg {
+		padding : 2px;
+	}
 
 	section {
 		width : 100%;
-
 		scroll-snap-align: start;
 	}
 

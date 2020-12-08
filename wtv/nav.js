@@ -45,7 +45,7 @@
 				for (let soup of soups) {
 					let el = document.createElement("a");
 					el.href = href;
-					el.classList.add("soupContainer");
+					el.classList.add("soupImg");
 					let img = document.createElement("img");
 					if (invert) img.src = "asset/soupInverse"+pathName+".png";
 					else        img.src = "asset/soup"       +pathName+".png";
@@ -61,7 +61,7 @@
 				}
 				
 				// total+=62.5;
-				total+=50;
+				total+=55.5;
 				idx++;
 				idx = idx%links.length;
 			}
@@ -116,7 +116,8 @@
 					soup.appendChild(el);
 				}
 				// total+=62.5;
-				total+=65;
+				total+=1000;
+				// total+=1000;
 				idx++;
 				idx = idx%links.length;
 			}
