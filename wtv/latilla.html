@@ -2,27 +2,53 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="galleryStyle.css">
 	<div id = modal></div>
+	<style>
+		.vl {
+			border-right: 2px solid #fd5c0a;
+		}
+		.nav {
+			font-family : Arial;
+			color : yellow;
+			text-decoration: none;
+			font-weight: bold;
+			font-size : 16px;
+		}
+		.nav:hover {
+			color : orange;
+		}
+		.orange {
+			color : orange;
+		}
+		.orange:hover {
+			color : pink;
+		}
+	</style>
 	<header class = "grid" style = "background-color : #1692d0; border-bottom: 10px solid #fff697; border-top : 10px solid #fff697;">
 			<nav class = middle>
-				<div class = "nav"  style = "border-bottom : 1px solid white;border-top : 1px solid white;">
-					<a class = "nav1" href = "index.html" >Home</a>
-					<a class = "nav1" href = "truss.html">Trusses</a>
-					<a class = "nav1" href = "viga.html">Vigas</a>
-					<a class = "nav1" href = "latilla.html">Latillas</a>
-					<a class = "nav1" href = "lumber.html">Rough Sawn</a>
-					<a class = "nav1" href = "corbel.html">Corbels</a>
-					<a class = "nav1" href = "carving.html">Carving</a>
-					<a class = "nav1" href = "door.html">Doors</a>
-					<a class = "nav1" href = "other.html">Other Products</a>
-					<a class = "nav1" href = "contact.html">Contact Us</a>
+				<div style = "display : flex; width:100%; justify-content : space-evenly">
+					<a class = "nav"        href = "index.html"  >Home          </a><div class = vl></div>
+					<a class = "nav"        href = "truss.html"  >Trusses       </a><div class = vl></div>
+					<a class = "nav"        href = "viga.html"   >Vigas         </a><div class = vl></div>
+					<a class = "nav orange" href = "latilla.html">Latillas      </a><div class = vl></div>
+					<a class = "nav"        href = "lumber.html" >Rough Sawn    </a><div class = vl></div>
+					<a class = "nav"        href = "corbel.html" >Corbels       </a><div class = vl></div>
+					<a class = "nav"        href = "carving.html">Carving       </a><div class = vl></div>
+					<a class = "nav"        href = "door.html"   >Doors         </a><div class = vl></div>
+					<a class = "nav"        href = "other.html"  >Other Products</a><div class = vl></div>
+					<a class = "nav"        href = "contact.html">Contact Us    </a>
 				</div>
 			</nav>
 	</header>
 	<header  class = "grid" style = "background-color : #4b7583">
-		<div class = "middle column">
+		<div class = "middle row">
 
-			<img src = "asset/truss/truss1.png"> 
-			<img src = "asset/truss/truss2.png"> 
+			<img src = "asset/latilla/latilla1.png">
+			<p>
+					Latilla  la•til•la [luh-tee-uh] A small diameter log used as decking above vigas or beams.
+					
+					We start with raw material and with skilled artisans produce beautiful vigas and latillas that add a warmth and charm to your home.
+			</p>
+			<div id = "photoGallery" style = "width : 3000px;"></div>
 		</div>
 	</header>
 
@@ -31,16 +57,26 @@
 		<p class = middle>PHOTO GALLERY</p>
 	</header>
 	<section class = "grid" style = "background-color : black">
-		<div id = "photoGallery" class = "middle"></div>
+		<div class = "middle row">
+			<p style = "color : white; font-family: `Trebuchet MS`;font-size : 26px; padding-top : 100px;">
+				300 Calle Industrial <br>
+				Bernalillo, NM 87004 <br>
+				Phone 505-867-1200 <br>
+				Fax 505-867-5770
+			</p>
+			<img src = "asset/latilla/latilla2.png" style = "width : 405px;">
+			<img src = "asset/pricelist.png">
+		</div>
 	</section>
 	<header class = "grid" style = "background-color : #1692d0; border-bottom: 10px solid #fff697; border-top : 10px solid #fff697;">
 		<p class = middle>blank</p>
 	</header>
 
 
-	<script src = gallery.js>
-	</script>
+	<script src = gallery.js></script>
+	<script src = soup.js></script>
 	<script>
-		initGallery("asset/truss/photo/",30);
+		initSoup();
+		initGallery("asset/latilla/photo/",12);
 	</script>
 </html>
