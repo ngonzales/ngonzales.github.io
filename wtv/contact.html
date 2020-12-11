@@ -4,7 +4,7 @@
 	<div id = modal></div>
 	<style>
 		* {
-			color: rgb(97, 178, 232);
+			/*color: rgb(97, 178, 232);*/
 		}
 		.vl {
 			border-right: 2px solid #fd5c0a;
@@ -19,16 +19,45 @@
 		.nav:hover {
 			color : orange;
 		}
+		.nav2 {
+			font-family : "Times New Roman, adobe-times, Times";
+			font-weight : bold;
+			text-decoration: none;
+			font-size : 14;
+			color : white;
+		}
+		.nav2:hover {color : gray;}
 		.orange {
 			color : orange;
 		}
 		.orange:hover {
 			color : pink;
 		}
+		.gray { color : gray;}
+		.gray:hover { color : white;}
 		hr {
 			border-top : 3px solid rgb(97, 178, 232);
 			width : calc(100% - 20px);
 		}
+		p {
+			font-size : 16px;
+			font-weight : bold;
+			text-align : left;
+		}
+		.contactInfo {
+			color: rgb(97, 178, 232);
+			justify-content : space-evenly; 
+			align-items : flex-start;
+			width : 30%;
+			height : 100%;
+			font-family : Tahoma;
+
+		}
+		.contact {
+			width : calc(100% - 60px);
+			padding : 10px 0;
+			align-items : center;
+			}
 	</style>
 	<header class = "grid" style = "background-color : black">
 		<div class = "middle column" style = "width : 100%; padding : 0">
@@ -53,21 +82,21 @@
 				<p style = "padding-top : 50px;line-height : normal; font-size : 64px; font-weight : bold;margin:auto">505-867-1200</p>
 			</div>
 			<hr>
-			<div class = "row" style = "width : calc(100% - 60px)">
-				<div class = "column">
-					<p>Melissa Holman      Office Manager</p>
+			<div class = "row contact">
+				<div class = "column contactInfo">
+					<p>Melissa Holman &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Office Manager</p>
 					<p>Email melissa@wholesaletimber.net</p>
 					<form action = "mailto:melissa@wholesaletimber.net">
 						<input type = "image" src = "asset/contact/email.png">
 					</form>
 				</div>
-				<img src = "asset/contact/contact2.jpg" style = "width : 150px">
+				<img src = "asset/contact/contact2.jpg" style = "width : 150px;">
 				<img src = "asset/contact/contact3.png" style = "width : 140px;height : 140px">
 			</div>
 			<hr>
-			<div class = "row" style = "width : calc(100% - 60px)">
-				<div class = "column">
-					<p>Leo Basquez         Owner</p>
+			<div class = "row contact">
+				<div class = "column contactInfo">
+					<p>Leo Basquez&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Owner</p>
 					<p>Email leo@wholesaletimber.net</p>
 					<form action = "mailto:leo@wholesaletimber.net">
 						<input type = "image" src = "asset/contact/email.png">
@@ -77,9 +106,9 @@
 				<img src = "asset/contact/contact5.png" style = "width : 140px;height : 140px">
 			</div>
 			<hr>
-			<div class = "row" style = "width : calc(100% - 60px)">
-				<div class = "column">
-					<p>Jeff Gonzales      Owner</p>
+			<div class = "row contact">
+				<div class = "column contactInfo">
+					<p>Jeff Gonzales&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Owner</p>
 					<p>Email jeff@wholesaletimber.net</p>
 					<form action = "mailto:jeff@wholesaletimber.net">
 						<input type = "image" src = "asset/contact/email.png">
@@ -89,7 +118,7 @@
 			</div>
 			<hr>
 			<div class = "row" style = "width : calc(100% - 60px)">
-				<div class = "column">
+				<div class = "column contactInfo">
 					<p>Casey Jones </p>
 					<p>Past due accounts</p>
 				</div>
@@ -97,59 +126,61 @@
 				<img src = "asset/contact/contact9.png" style = "width : 140px;height : 140px">
 			</div>
 			<hr>
-			<nav style = "width : 95%;height : 50px; padding-top : 25px;">
+			<nav style = "width : 70%;height : 50px; padding-top : 25px;">
 				<div style = "display : flex; width:100%; justify-content : space-evenly">
-					<a class = "nav"        href = "index.html"   >Home          </a><div class = "vl"></div>
-					<a class = "nav"        href = "truss.html"   >Trusses       </a><div class = "vl"></div>
-					<a class = "nav"        href = "viga.html"    >Vigas         </a><div class = "vl"></div>
-					<a class = "nav"        href = "latilla.html" >Latillas      </a><div class = "vl"></div>					
-					<a class = "nav"        href = "lumber.html"  >Rough Sawn    </a><div class = "vl"></div>
-					<a class = "nav"        href = "corbel.html"  >Corbels       </a><div class = "vl"></div>
-					<a class = "nav"        href = "carving.html" >Carving       </a><div class = "vl"></div>
-					<a class = "nav"        href = "door.html"    >Doors         </a><div class = "vl"></div>
-					<a class = "nav"        href = "other.html"   >Other Products</a><div class = "vl"></div>
-					<a class = "nav orange" href = "contact.html">Contact Us    </a>
+					<a class = "nav2"       href = "index.html"   >Home          </a>
+					<a class = "nav2"       href = "truss.html"   >Trusses       </a>
+					<a class = "nav2"       href = "viga.html"    >Vigas         </a>
+					<a class = "nav2"       href = "latilla.html" >Latillas      </a>					
+					<a class = "nav2"       href = "lumber.html"  >Rough Sawn    </a>
+					<a class = "nav2"       href = "corbel.html"  >Corbels       </a>
+					<a class = "nav2"       href = "carving.html" >Carving       </a>
+					<a class = "nav2"       href = "door.html"    >Doors         </a>
+					<a class = "nav2"       href = "other.html"   >Other Products</a>
+					<a class = "nav2 gray"  href = "contact.html">Contact Us     </a>
 				</div>
 			</nav>
-			<p>
+			<p style = "color : white; font-family : 'Trebuchet MS'; font-size : 26px;padding-bottom : 40px;font-weight : normal">
 				300 Calle Industrial <br>
 				Bernalillo, NM 87004 <br>
 				Phone 505-867-1200 <br>
 				Fax 505-867-5770 <br>
 			</p>
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.4137387198257!2d-106.56113718445653!3d35.29569975862573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87227818035168e9%3A0x6c2bad29917c1304!2sWholesale%20Timber%20%26%20Viga%20LLC!5e0!3m2!1sen!2sus!4v1605286720493!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-					<p>Hours of operation</p>
-					<hr>
-					<table style = "color : white; width : 50%;">
-						<tr>
-							<th>Monday</th>
-							<th>8am-5pm</th>
-						</tr>
-						<tr>
-							<th>Tuesday</th>
-							<th>8am-5pm</th>
-						</tr>
-						<tr>
-							<th>Wednesday</th>
-							<th>8am-5pm</th>
-						</tr>
-						<tr>
-							<th>Thursday</th>
-							<th>8am-5pm</th>
-						</tr>
-						<tr>
-							<th>Friday</th>
-							<th>8am-5pm</th>
-						</tr>
-						<tr>
-							<th>Saturday</th>
-							<th>Closed</th>
-						</tr>
-						<tr>
-							<th>Sunday</th>
-							<th>Closed</th>
-						</tr>
-					</table>
+					<div style = "font-family : 'Impact';color : white; align-self : flex-start; padding-left : 100px; width : 20%;">
+						<p style = "font-weight : normal;font-size : 24px;">Hours of operation</p>
+						<hr style = "			border-top : 3px solid white; width : 100%;">
+						<table style = "width : 80%; color : white; text-align : left;padding : 10px;">
+							<tr>
+								<th>Monday</th>
+								<th>8am-5pm</th>
+							</tr>
+							<tr>
+								<th>Tuesday</th>
+								<th>8am-5pm</th>
+							</tr>
+							<tr>
+								<th>Wednesday</th>
+								<th>8am-5pm</th>
+							</tr>
+							<tr>
+								<th>Thursday</th>
+								<th>8am-5pm</th>
+							</tr>
+							<tr>
+								<th>Friday</th>
+								<th>8am-5pm</th>
+							</tr>
+							<tr>
+								<th>Saturday</th>
+								<th>Closed</th>
+							</tr>
+							<tr>
+								<th>Sunday</th>
+								<th>Closed</th>
+							</tr>
+						</table>
+					</div>
 		</div>
 
 	</header>

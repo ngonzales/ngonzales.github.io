@@ -18,10 +18,14 @@
 		header {
 			/*border-bottom: 10px solid black;*/
 			/*border-top   : 10px solid black;*/
-			min-height : 100px;
+			/*min-height : 100px;*/
+		}
+		.title {
+			font-size : 26px; 
+			font-family : 'Trebuchet MS'; 
 		}
 		section {
-			min-height : 400px;
+			/*min-height : 400px;*/
 		}
 		ul {
 			list-style-type : none;
@@ -51,7 +55,11 @@
 			width : 80%;
 			text-decoration: none;
 		}
-		
+		.hl {
+			width : 50px;
+			border-top: 5px solid;
+			margin : 15px;
+		}
 
 	</style>
 	<!-- <div style = "background-color : #38429d; height : 30px;"> -->
@@ -59,7 +67,7 @@
 	<header class = grid style = "background-color : #38429d; top-padding : 0">
 		<div class = middle style = "padding: 0">
 			<nav>
-				<div class = "nav"  style = "border-bottom : 1px solid white;border-top : 1px solid white;">
+				<div class = "nav"  style = "border-bottom : 1px solid white;border-top : 100px 1px solid white;">
 					<a class = "nav1" href = "index.html" >Home</a>
 					<a class = "nav1" href = "truss.html">Trusses</a>
 					<a class = "nav1" href = "viga.html">Vigas</a>
@@ -76,48 +84,133 @@
 	</header>
 
 	<section class = "grid" style ="background-color:black;">
-		<img class = "middle" src = "asset/other/other0.png">
+		<div class = "row middle">
+			<img src = "asset/other/other14.png" style = "width : 25%;">
+			<img src = "asset/other/other0.png"  style = "width : 50%;">
+			<img src = "asset/other/other14.png" style = "width : 25%; transform : scaleX(-1);">
+		</div>
 	</section>
-	<header style ="background-color:#38429d;"></header>
+	<header class = "grid title" style ="background-color:#38429d;">
+		<div class = "middle column" style = "color : #72a8ca">
+			<div class = "row">
+				<p class = "middle;">Log Railings</p>
+				<div class = "hl"></div>
+				<p class = "middle;">Hand Carved Railings</p>
+				<div class = "hl"></div>
+				<p class = "middle;">Wrought Iron Railings</p>
+			</div>
+		</div>
+	</header>
 	<section class = "grid" style ="background-color:#72a8ca;">
 		<div class = "middle row">
-			<img src="asset/other/other1.png">
-			<div class = "column">
+			<div style = "width : 30%;"><img src="asset/other/other1.png" style = "width : 100%;"></div>
+			<div class = "column" style = "width : 70%;">
+				<p style = "font-size : 26px; font-family : 'Trebuchet MS'; border-bottom : 2px solid; color : black;">
+					Railing Projects
+				</p>
 				<img src="asset/other/other2.png">
-				<img src="asset/other/other3.png">
+				<p style = "font-size : 13px; font-family : Arial; color : white;">
+					We fabricate log railings for straight balconies and for stairs too.
+				</p>
+				<div class = "row">
+					<div style = "width : 60%;">
+						<img src="asset/other/other3.png">
+					</div>
+					<div style = "width : 40%;">
+						<div id = "railing"></div>
+					</div>
+				</div>
 				<img src="asset/other/other4.png">
 
 			</div>
 		</div>
 	</section>
 	
-	<header style ="background-color:#b95f5f;"></header>
+	<header class = "grid title" style ="background-color:#b95f5f;border-top: 10px solid black;border-bottom: 10px solid black;">
+		<div class = "middle column" style = "color : #000000">
+			<div class = "row">
+				<p class = "middle;">Solid Wood Mantels</p>
+				<div class = "hl"></div>
+				<p class = "middle;">Hand Carved Mantel</p>
+				<div class = "hl"></div>
+				<p class = "middle;">Mantel Corbels</p>
+			</div>
+		</div>
+	</header>
 	<section class = "grid"style ="background-color:#c6bdae;">
-		<div class = "middle row">
+		<div class = "middle row" style = "font-size : 13px; font-family : Arial;">
+			<div class = "column" style = "width : 30%;">
 			<img src="asset/other/other5.png">
-			<div class = "column">
-				<img src="asset/other/other6.png">
+			<p>
+				Choose from a variety of corbels for your mantel or have us design something completely new. We can make corbels and mantels to your specifications too.Choose from a variety of corbels for your mantel or have us design  completely new. We can make corbels and mantels to your specifications too.
+			</p>
+			</div>
+			<div class = "column" style = "width : 70%;">
+				<div class = "row">
+					<div class = "column" style = "width : 70%;">
+					<p>
+						The staff here at Wholesale Timber & Viga can help you design and build the perfect mantel for your project.
+					</p>
+					<img src="asset/other/other6.png">
+					</div>
+					<div id = "mantel" style = "width : 120px;"></div>
+				</div>
+				<div class = "row" style = "width : 50%;">
+				<p>The Ford</p>
+				<p>The Chevy</p>
+				<p>The Dodge</p>
+				</div>
 				<img src="asset/other/other7.png">
 				<img src="asset/other/other8.png">
+				<p style = "width : 50%;padding-top : 10px;">
+					We can make you a rustic log mantel or mantels made from hand hewn materials.
+				</p>
 
 			</div>
 		</div>
 	</section>
 	
-	<header style ="background-color:#59a55d;"></header>
+	<header class = "grid title" style ="background-color:#59a55d;border-top: 10px solid black;border-bottom: 10px solid black;">
+		<div class = "column middle"><p>Hand Made Furniture</p></div>
+	</header>
 	<section class = "grid" style ="background-color:#c7cfa8;">
-		<div class = "middle row">
-			<img src="asset/other/other9.png">
-			<div class = "column">
-				<img src="asset/other/other10.png">
-				<!-- <img src="asset/other/other11.png"> -->
-				<!-- <img src="asset/other/other12.png"> -->
-
+		<div class = "middle row" style = "width : 100%;">
+			<div style = "width : 30%;"><img src="asset/other/other9.png"></div>
+			<div class = "column"; style = "color : green; font-size : 26px;font-family : 'Trebuchet MS'">
+				<div class = "row">
+					<p>
+						Angelika Bed
+					</p>
+					<div id = "furniture1"></div>
+				</div>
+				<div class = "row">
+					<p>
+						Milan Sofa
+					</p>
+					<div id = "furniture2"></div>
+				</div>
+				<div class = "row">
+					<div id = "furniture3"></div>
+				</div>
+				<div class = "row">
+					<p>
+						Wooden Chests
+					</p>
+					<div id = "furniture4"></div>
+				</div>
 			</div>
 		</div>
 	</section>
 	
-	<header style ="background-color:#d05f00;"></header>
+	<header class = "grid title"style ="background-color:#d05f00;border-top: 10px solid black;border-bottom: 10px solid black;">
+		<div class = "middle column" style = "color : #000000">
+			<div class = "row" style = "justify-content : center;">
+				<p class = "middle;">Hand Carved Signs</p>
+				<div style = "width : 200px;"class = "hl"></div>
+				<p class = "middle;">Hand Painted Signs</p>
+			</div>
+		</div>
+	</header>
 	<section class = "grid" style ="background-color:#ccbcac;">
 		<div class = "middle row">
 			<img src="asset/other/other10.png">
@@ -131,13 +224,27 @@
 		</div>
 	</section>
 	
-	<header style ="background-color:#48167d;"></header>
+	<header class = "grid title" style ="background-color:#7918e7;border-top: 10px solid black;border-bottom: 10px solid black;">
+		<div class = "middle row">
+		<div class = "hl" style = "width : 22%"></div>
+		<p class = "column">
+			Let us help you design your next project
+		</p>
+		<div class = "hl" style = "width : 22%"></div>
+		</div>
+	</header>
 	<section class = "grid" style ="background-color:#1c2f4d;">
 		<div class = "row middle">
 			<div class = "column">
 				<div class = "row">
 					<img src = "asset/other/other13.png">
-					<img src = "asset/other/other14.png">
+					<div class = "column">
+						<img src = "asset/other/other14.png">
+						<p style = "color : #9CC5F0; font-family : Arial;">
+							<strong>CONCEPT DRAWING</strong><br>
+							Let us help you design your next project. We have the experience to design a structure that is beautiful and has the structural integrity to last lifetimes.
+						</p>
+					</div>
 				</div>
 					<img src = "asset/other/other15.png">
 					<img src = "asset/other/other16.png">
@@ -147,38 +254,52 @@
 				<img src = "asset/other/other18.png">
 				<img src = "asset/other/other19.png">
 				<img src = "asset/other/other20.jpg">
+				<p style = "color : white">
+					We have the experience help you design for your specific area.We have the  help you design for your specific area.
+					<br>
+					Let us help you with your gazebo, trellis, portal, or shade structure.
+				</p>
 				<img src = "asset/other/other21.png">
 			</div>
 		</div>
 	</section>
 	
-	<header style ="background-color:#999999;"></header>
+	<header style ="background-color:#999999;border-top: 10px solid black;border-bottom: 10px solid black;height : 100px;"></header>
 	<section class = "grid" style ="background-color:#000000;">
 		<div class = "middle column">
 			<div class = "row">
 				<img src = "asset/other/other22.png">
 				<img src = "asset/other/other23.png">
+				<div class = "column" style = "color : gray;justify-content : space-evenly;">
+					<p>Metal post base <br> for round viga post</p>
+					<p>Metal post base <br> for square post</p>
+					<p>Joist hangers <br> for square beams.</p>
+					<p>Joist hangers <br> for logs and vigas.</p>
+				</div>
 				<img src = "asset/other/other24.png">
 			</div>
 			<div id = "steel"></div>
 		</div>
 	</section>
 	
-	<header style ="background-color:#999999;"></header>
-	<section class = "grid" style ="background-color:#000000;">
+	<header style ="background-color:#999999;border-top: 10px solid black;border-bottom: 10px solid black;height : 100px;"></header>
+	<section class = "grid" style ="background-color:#000000; color : #999999; font-size : 26px; font-family : Arial; font-weight : bold;">
 		<div class = "row middle">
 			<div class = "column">
+				<p style = "align-self : flex-start;">Clavos</p>
 				<div id = "clavos"></div>
 			</div>
-			<div class = "column">
+			<div class = "column" style = "width : 50%;">
+				<p style = "align-self : flex-start;">Grates</p>
 				<div id = "grates"></div>
+				<p style = "align-self : flex-start;">Hardware</p>
 				<div id = "hardware"></div>
 
 			</div>
 		</div>
 	</section>
 	
-	<header style ="background-color:#303030;"></header>
+	<header style ="background-color:#999999;height : 10px;"></header>
 	<section class = "grid" style ="background-color:#000000;">
 		<p class = "middle column" style = "color : white; font-size : 48; font-family : 'Comic Sans MS';">
 			300 Calle industrial <br>
@@ -188,12 +309,17 @@
 		</p>
 	</section>
 	
-	<header style ="background-color:#303030;"></header>
+	<header style ="background-color:#999999;height : 10px;"></header>
 	<section style ="background-color:#000000;"></section>
 	
-	<header style ="background-color:#38429d;"></header>
-	<section style ="background-color:#303030;"></section>
-	<header style ="background-color:#38429d;"></header>
+	<header style ="background-color:#38429d;height : 20px;"></header>
+	<section class = "grid" style ="background-color:#999999;height : 2px;">
+		<p class = "middle">
+			Website Designed by Jeff Gonzales © 2020 
+		</p>
+	</section>
+	<header style ="background-color:#38429d;height : 20px;"></header>
+
 	
 </html>
 
@@ -201,6 +327,12 @@
 <script src = gallery.js></script>
 <script>
 	initSoup();
+	initGallery("asset/other/photo/railing/",6,"railing");
+	initGallery("asset/other/photo/mantel/",3,"mantel");
+	initGallery("asset/other/photo/furniture/1/",3,"furniture1");
+	initGallery("asset/other/photo/furniture/2/",3,"furniture2");
+	initGallery("asset/other/photo/furniture/3/",4,"furniture3");
+	initGallery("asset/other/photo/furniture/4/",3,"furniture4");
 	initGallery("asset/other/photo/sign/",8,"sign");
 	initGallery("asset/other/photo/steel/",2,"steel");
 	initGallery("asset/other/photo/hardware/1/",8	,"grates");
