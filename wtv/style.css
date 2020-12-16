@@ -3,13 +3,27 @@
 	padding : 0;
 	/*font-family : Tahoma;*/
 }
+html {
+	font-size : 16px;
+}
+@media screen and (max-width: 1110px) { 
+	html { 
+		font-size: 12; 
+	} 
+}
+
+@media screen and (max-width: 1000px) { 
+	html { 
+		font-size: 8;
+	} 
+}
 
 section {
 	min-height : 50px;
 }
 
 img {
-			max-width : 100%;
+	max-width : 100%;
 }
 
 #parallax {
@@ -26,6 +40,9 @@ img {
 }
 .soup {
 	padding : 2px;
+	
+	/*width : 80px;*/
+	/*height : 100px;*/
 }
 		
 

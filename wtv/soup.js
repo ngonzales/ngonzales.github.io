@@ -25,7 +25,8 @@ let initSoup = (invert) => {
 		parallax.style.top = -(scroll*scrollMod)+"px";
 	});
 	let h = document.documentElement.scrollHeight/100*1.5;
-	let soupHeight = 120;
+	// let soupHeight = 500;
+	let maxWidth = 80;
 	let drawSoup = () => {
 		for (let soup of soupContainers) {
 		while (soup.firstChild) {
@@ -41,7 +42,9 @@ let initSoup = (invert) => {
 				// img.src = "asset/soupCarving.png";
 				if( invert)img.src = "asset/soupInverse"+names[i%names.length]+".png";
 				else       img.src = "asset/soup"      +names[i%names.length]+".png";
-				img.height = soupHeight;
+				// img.maxWidth = soupHeight;
+				img.width = maxWidth;
+				// img.style.width = "100%";
 				if (invert) {
 					a.onmouseout   = e => e.target.src = "asset/soupInverse"+names[i%names.length]+".png";
 					a.onmouseover  = e => e.target.src = "asset/soup"       +names[i%names.length]+".png";
@@ -57,7 +60,10 @@ let initSoup = (invert) => {
 
 	let f = () => {
 		requestAnimationFrame(f);
-		let t = document.documentElement.scrollHeight
+		let t = document.documentElement.scrollHeight;
+		let soupHeight;
+		if (soupContainers[0].childNodes[0]) soupHeight = soupContainers[0].childNodes[0].clientHeight;
+		else soupHeight = 100;
 		if (h !=((t/(soupHeight+4))+((t-innerHeight)/(soupHeight+4)*scrollMod))) {
 			h = ((t/(soupHeight+4))+((t-innerHeight)/(soupHeight+4)*scrollMod));
 			drawSoup();
