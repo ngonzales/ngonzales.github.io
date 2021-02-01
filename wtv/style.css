@@ -8,13 +8,13 @@ html {
 }
 @media screen and (max-width: 1110px) { 
 	html { 
-		font-size: 12; 
+		font-size: 26; 
 	} 
 }
 
 @media screen and (max-width: 1000px) { 
 	html { 
-		font-size: 8;
+		font-size: 36;
 	} 
 }
 
@@ -39,7 +39,7 @@ img {
 	flex-direction : column;
 }
 .soup {
-	padding : 2px;
+	/*padding : 2px;*/
 	
 	/*width : 80px;*/
 	/*height : 100px;*/
@@ -49,7 +49,8 @@ img {
 .grid {
 	width : 100%;
 	display : grid;
-	grid-template-columns : auto min(1000px, calc(100vw - 160px)) auto;
+	/*grid-template-columns : auto min(1000px, calc(100vw - 160px)) auto;*/
+	grid-template-columns : auto min(1000px, calc(100vw - 250px)) auto;
 	grid-template-areas  : "left middle right";
 }
 
@@ -72,6 +73,8 @@ img {
 	display : flex;
 	flex-direction: row;
 	justify-content : space-between;
+	flex-wrap : wrap;
+	text-align : center
 }
 
 .column {

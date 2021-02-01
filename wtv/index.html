@@ -32,20 +32,26 @@
 			color : white;
 			padding : 10px;
 			text-decoration: none;
+			min-width : 20px;
+			text-align : center;
 		}
 
 		.nav1:hover {
 			color : gray;
 		}
 		.nav {
+			font-family : "Times New Roman";
 			font-size : 1rem;
 			display : flex;
 			justify-content : center;
 			margin : 0 10%;
 			width : 80%;
 			text-decoration: none;
+			flex-wrap : wrap;
 		}
-		
+		.selected {color : grey;font-style: italic;}
+		.selected:hover {color : white;}
+		.comicsans {font-family : 'Comic Sans MS', Arial, Helvetica, sans-serif;}
 
 	</style>
 	<div style = "background-color : #fd6f27; height : 30px;">
@@ -54,25 +60,25 @@
 		<div class = middle style = "padding: 0">
 			<nav>
 				<div class = "nav"  style = "border-bottom : 1px solid white;border-top : 1px solid white;">
-					<a class = "nav1" href = "index.html" >Home</a>
-					<a class = "nav1" href = "truss.html">Trusses</a>
-					<a class = "nav1" href = "viga.html">Vigas</a>
-					<a class = "nav1" href = "latilla.html">Latillas</a>
-					<a class = "nav1" href = "lumber.html">Rough Sawn</a>
-					<a class = "nav1" href = "corbel.html">Corbels</a>
-					<a class = "nav1" href = "carving.html">Carving</a>
-					<a class = "nav1" href = "door.html">Doors</a>
-					<a class = "nav1" href = "other.html">Other Products</a>
-					<a class = "nav1" href = "contact.html">Contact Us</a>
+					<a class = "nav1 selected" href = "index.html"  >Home          </a>
+					<a class = "nav1"          href = "truss.html"  >Trusses       </a>
+					<a class = "nav1"          href = "viga.html"   >Vigas         </a>
+					<a class = "nav1"          href = "latilla.html">Latillas      </a>
+					<a class = "nav1"          href = "lumber.html" >Rough Sawn    </a>
+					<a class = "nav1"          href = "corbel.html" >Corbels       </a>
+					<a class = "nav1"          href = "carving.html">Carving       </a>
+					<a class = "nav1"          href = "door.html"   >Doors         </a>
+					<a class = "nav1"          href = "other.html"  >Other Products</a>
+					<a class = "nav1"          href = "contact.html">Contact Us    </a>
 				</div>
 			</nav>
 		</div>
 	</header>
 	<header class = "grid" style = "background-color : #000000;">
-		<div class = "middle row" style = " justify-content : center;">
-			<img src = "asset/mainHeader1.png">
-			<img src = "asset/mainHeader2.png">
-			<img src = "asset/mainHeader3.png">
+		<div class = "middle" style = " justify-content : center;flex-flow:nowrap;white-space:nowrap;margin:auto">
+			<img src = "asset/mainHeader1.png" style = "max-width : 23%;width : auto; height : auto">
+			<img src = "asset/mainHeader2.png" style = "max-width : 54%;width : auto; height : auto">
+			<img src = "asset/mainHeader3.png" style = "max-width : 23%;width : auto; height : auto">
 		</div>
 	</header>
 <!-- Truss -->
@@ -82,12 +88,12 @@
 
 	<section class = "grid" style = "background-color : #656366">
 		<div class = "middle row" >
-			<div style = "width : 60%;">
-				<img src = "asset/truss1.jpg" style = "width : 100%;">
+			<div style = "flex :  650px;">
+				<img src = "asset/truss1.jpg" style = " max-width : 100%;">
 			</div>
-			<div style = "width : 40%;">
+			<div style = "flex :  310px;">
 				<div class = "text" >
-					<img src = "asset/trussText.png" style = "width : 100%;">
+					<img src = "asset/trussText.png" style = "max-width : 100%; margin : auto">
 					<p>Our heavy timber and viga trusses create, in your home, a timeless grandeur. We offer designs, simple to complex, that are unsurpassed in appearance. We can also provide all necessary engineering. Come and meet with us today to begin planning your new home or renovation!</p>
 				</div>
 			</div>
@@ -118,10 +124,10 @@
 	</header>
 	<section class = "grid" style = "background-color : #c7cfa8">
 		<div class = "middle row">
-			<div style = "width : 70%;">
-				<img src = "asset/viga1.jpg" style = "width : 100%">
+			<div style = "flex : 650px;">
+				<img src = "asset/viga1.jpg" style = "max-width : 100%">
 			</div>
-			<div style = "width  : 30%">
+			<div style = "flex:310px">
 				<div class = "text">
 					<img src = "asset/vigaText.png">
 					<p style = "font-size : 18px;">
@@ -138,10 +144,10 @@
 	</header>
 	<section class = "grid" style = "background-color : #656366">
 		<div class = "middle row">
-			<div style = "width : 45%;">
-				<img src = "asset/door1.jpg" style = "width : 100%">
+			<div style = "flex : 450px;">
+				<img src = "asset/door1.jpg" style = "max-width : 100%">
 			</div>
-			<div style = "width  : 40%">
+			<div style = "flex  : 450px">
 				<div class = "text">
 					<img src = "asset/doorText.png">
 					<p style = "font-size : 18px;">
@@ -162,13 +168,13 @@
 			</div>
 			<div style = "width  : 100%">
 				<div class = "text row">
-					<p style = "font-size : 25px;">
+					<p style = "font-size : 25px; width : 500px;text-align : center">
 						<strong style = "font-size : 30px;">Latilla</strong>
 							Latilla  la•til•la [luh-tee-uh] A small diameter log used as decking above vigas or beams.
 							
 							Latillas are sold in a variety of finishes. Left unpeeled they are used for coyote fencing. Our skilled craftsmen can peel the bark off, using traditional drawknives. Peel latillas are used in ceilings and shade structures.  Latillas can also be used to make furniture and be used in doors, gates and cabinets. 
 					</p>
-					<img src = "asset/latillaText.png" style = "width : 30%;">
+					<img src = "asset/latillaText.png" style = "max-width : 350px;">
 				</div>
 			</div>
 		</div>
@@ -236,7 +242,7 @@
 	</section>
 <!-- Contact -->
 	<header  class = "grid" style = "background-color : #e32d66">
-		<h class = "middle">Contact Us</h>
+		<h class = "middle comicsans" style = "font-size : 24px">Contact Us</h>
 	</header>
 	<section class = "grid" style = "background-color : #000000">
 		<div class = "middle column">
@@ -244,7 +250,7 @@
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.4137387198257!2d-106.56113718445653!3d35.29569975862573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87227818035168e9%3A0x6c2bad29917c1304!2sWholesale%20Timber%20%26%20Viga%20LLC!5e0!3m2!1sen!2sus!4v1605286720493!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 			<div class = row>
 				<div class = text style = "width : 50%;">
-					<p style = "font-size : 50px">
+					<p class = comicsans style = "align : left; font-size : 48px">
 					300 Calle industrial
 					Bernalillo, NM 87004
 					505-867-1200
@@ -283,7 +289,9 @@
 					</table>
 				</div>
 				<div style = "width : 30%">
+					<a href = "2021_pricelist.pdf">
 					<img src = "asset/pricelist.png" style = "width : 100%">
+					</a>
 				</div>
 				</div>
 			</div>

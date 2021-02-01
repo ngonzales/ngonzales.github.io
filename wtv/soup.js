@@ -1,10 +1,5 @@
 
-	// <div id = "parallax" class = "grid abs" style = "height : 0px;">
-	// 	<div class = "left  soupContainer"></div>
-	// 	<div class = "right soupContainer"></div>
-	// </div>
-	
-		
+let soupPadding = [];		
 let initSoup = (invert) => {
 
 	let names = ["Home","Lumber","Viga","Door","Latillas","Corbel","Carving","Other","Contact"]
@@ -34,10 +29,12 @@ let initSoup = (invert) => {
 		}
 		}
 		for (let i=0;i<h-1;++i){
-			for (let soupContainer of soupContainers) {
+			for (let [index,soupContainer] of soupContainers.entries()) {
 				let a = document.createElement("a");
 				a.href = names[i%names.length].toLocaleLowerCase()+".html";
 				a.classList.add("soup");
+				if (!soupPadding[i+(h-1)*index]) soupPadding[i+(h-1)*index] = Math.random()*4+"px 0";
+				a.style.padding = soupPadding[i+(h-1)*index];
 				let img = new Image();
 				// img.src = "asset/soupCarving.png";
 				if( invert)img.src = "asset/soupInverse"+names[i%names.length]+".png";
