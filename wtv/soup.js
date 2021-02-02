@@ -2,7 +2,7 @@
 let soupPadding = [];		
 let initSoup = (invert) => {
 
-	let names = ["Home","Lumber","Viga","Door","Latillas","Corbel","Carving","Other","Contact"]
+	let names = ["Home","Truss","Viga","Lumber","Door","Latillas","Corbel","Carving","Other","Contact"]
 	// let parallax = document.getElementById("parallax");
 	let parallax = document.createElement("div");
 	parallax.classList.add("grid");
