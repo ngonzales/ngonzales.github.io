@@ -19,7 +19,8 @@ html {
 }
 
 section {
-	min-height : 50px;
+	/*min-height : 50px;*/
+	position: relative;
 }
 
 img {
@@ -53,10 +54,12 @@ img {
 	grid-template-columns : auto min(1000px, calc(100vw - 250px)) auto;
 	grid-template-areas  : "left middle right";
 }
+/*.gridLatilla {	grid-template-columns : auto min(1000px, calc(100vw - 250px)) auto;}*/
+.gridLatilla {	grid-template-columns : auto 1000px auto;}
 
 .middle {
 	grid-area : middle;
-	padding : 20px;
+	/*padding : 20px;*/
 }
 
 .left {
@@ -74,7 +77,7 @@ img {
 	flex-direction: row;
 	justify-content : space-between;
 	flex-wrap : wrap;
-	text-align : center
+	/*text-align : center*/
 }
 
 .column {

@@ -1,17 +1,20 @@
 
-let soupPadding = [];		
-let initSoup = (invert) => {
+let soupPadding = [];
+let initSoup = (invert,latilla = false) => {
 
 	let names = ["Home","Truss","Viga","Lumber","Door","Latillas","Corbel","Carving","Other","Contact"]
+	let htmls = ["index","Truss","Viga","Lumber","Door","latilla","Corbel","Carving","Other","Contact"]
 	// let parallax = document.getElementById("parallax");
 	let parallax = document.createElement("div");
 	parallax.classList.add("grid");
+	if (latilla) parallax.classList.add("gridLatilla");
 	parallax.setAttribute("id","parallax");
 	// let soupContainers = document.getElementsByClassName("soupContainer");
 	let soupContainers = [document.createElement("div"),document.createElement("div")]
 	soupContainers.forEach(soup=>soup.classList.add("soupContainer"));
-	soupContainers[0].classList.add("left");
-	soupContainers[1].classList.add("right");
+	soupContainers[0].classList.add("right");
+	soupContainers[1].classList.add("left");
+
 	soupContainers.forEach(soup=>parallax.appendChild(soup));
 	document.documentElement.appendChild(parallax);
 	let scrollMod = .5;
@@ -30,24 +33,25 @@ let initSoup = (invert) => {
 		}
 		for (let i=0;i<h-1;++i){
 			for (let [index,soupContainer] of soupContainers.entries()) {
+				if (latilla && soupContainer.classList.contains("left")) continue;
 				let a = document.createElement("a");
-				a.href = names[i%names.length].toLocaleLowerCase()+".html";
+				a.href = htmls[i%names.length].toLocaleLowerCase()+".html";
 				a.classList.add("soup");
 				if (!soupPadding[i+(h-1)*index]) soupPadding[i+(h-1)*index] = Math.random()*4+"px 0";
 				a.style.padding = soupPadding[i+(h-1)*index];
 				let img = new Image();
 				// img.src = "asset/soupCarving.png";
-				if( invert)img.src = "asset/soupInverse"+names[i%names.length]+".png";
-				else       img.src = "asset/soup"      +names[i%names.length]+".png";
+				if( invert)img.src = "asset/soup/soupInverse"+names[i%names.length]+".png";
+				else       img.src = "asset/soup/soup"      +names[i%names.length]+".png";
 				// img.maxWidth = soupHeight;
 				img.width = maxWidth;
 				// img.style.width = "100%";
 				if (invert) {
-					a.onmouseout   = e => e.target.src = "asset/soupInverse"+names[i%names.length]+".png";
-					a.onmouseover  = e => e.target.src = "asset/soup"       +names[i%names.length]+".png";
+					a.onmouseout   = e => e.target.src = "asset/soup/soupInverse"+names[i%names.length]+".png";
+					a.onmouseover  = e => e.target.src = "asset/soup/soup"       +names[i%names.length]+".png";
 				} else {
-					a.onmouseover = e => e.target.src = "asset/soupInverse"+names[i%names.length]+".png";
-					a.onmouseout  = e => e.target.src = "asset/soup"       +names[i%names.length]+".png";
+					a.onmouseover = e => e.target.src = "asset/soup/soupInverse"+names[i%names.length]+".png";
+					a.onmouseout  = e => e.target.src = "asset/soup/soup"       +names[i%names.length]+".png";
 				}
 				a.appendChild(img);
 				soupContainer.appendChild(a);

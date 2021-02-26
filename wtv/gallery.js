@@ -15,9 +15,15 @@
 			pLs[i].style["padding-top"] = (innerHeight - pLs[i].height)/2;
 			currentIdx = i+1;
 		}
+		let right = document.createElement("span");
+		let left = document.createElement("span");
+		right.classList = "chevron right"
+		left.classList = "chevron left"
+
 		let prev = document.createElement("button");
 		prev.classList = "navButton prevButton";
-		prev.innerText = "PREVIOUS";
+		prev.appendChild(left);
+		// prev.innerText = "PREVIOUS";
 		prev.onclick = () => setPhoto(currentIdx-1);
 		model.appendChild(prev);
 
@@ -36,11 +42,22 @@
 			model.appendChild(fullImg);
 		}
 		totalPictures+=numOfPics;
+
 		let next = document.createElement("button");
 		next.classList = "navButton nextButton";
 		next.onclick = () => setPhoto(currentIdx+1);
 		model.appendChild(next);
-		next.innerText = "NEXT";
+		// next.innerText = "NEXT";
+		next.appendChild(right);
+
+		let close = document.createElement("button");
+		close.classList = "navButton closeButton";
+		close.onclick = () => model.style.display = "none";
+		close.innerText = "X";
+		model.appendChild(close);
+
+
+
 		onkeydown = (e) => {model.style.display = "none";}
 	}
 	// onkeydown = (e) => {setPhoto(currentIdx-1)}
