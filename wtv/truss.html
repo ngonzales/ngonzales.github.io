@@ -1,6 +1,9 @@
 <html>
+	<link rel="icon" type="image/png" href="asset/truss/truss3.png">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="galleryStyle.css">
+	<meta charset="utf-8">
+
 	<div id = modal></div>
 	<style>
 		.vl {
@@ -11,7 +14,7 @@
 			color : yellow;
 			text-decoration: none;
 			font-weight: bold;
-			font-size : 20px;
+			font-size : 16px;
 		}
 		.nav:hover {
 			color : orange;
@@ -24,7 +27,7 @@
 		}
 	</style>
 	<header class = "grid" style = "background-color : #ac2794; border-bottom: 10px solid black;
-			border-top   : 10px solid black;">
+			border-top   : 10px solid black;height : 50px; align-content : center">
 		<nav class = middle>
 			<div style = "display : flex; width:100%; justify-content : space-evenly">
 				<a class = "nav"        href = "index.html"   >Home          </a><div class = "vl"></div>
@@ -49,20 +52,20 @@
 	</header>
 
 	<header class = "grid" style = "background-color : #ac2794; border-bottom: 10px solid #350d56;
-			border-top   : 10px solid #350d56;">
-		<p class = middle>PHOTO GALLERY</p>
+			border-top   : 10px solid #350d56; font-size : 48px; font-family: Times New Roman, adobe-times, Times; color : #FCEBC0;font-weight : bold; text-align : center;">
+		<p class = middle>Photo Gallery</p>
 	</header>
-	<section class = "grid" style = "background-color : black">
+	<section class = "grid" style = "background-color : black; font-family : Helvetica">
 		<div class = "middle column">
-			<div style = "width : 85%">
-				<div id = "photoGallery"></div>
-			<p style = "color: rgb(252, 235, 192);">
-				Our heavy timber and viga trusses create  a timeless grandeur. We offer designs, simple to complex, that are unsurpassed in appearance. We can also provide all necessary engineering. Come and meet with us today to begin planning your new home or renovation!
-			</p>
+			<div style = "width : 85%;">
+				<div id = "photoGallery" style = "padding : 40px 0 40px 0;"></div>
+				<p style = "color: rgb(252, 235, 192); font-size : 18px">
+					Our heavy timber and viga trusses create  a timeless grandeur. We offer designs, simple to complex, that are unsurpassed in appearance. We can also provide all necessary engineering. Come and meet with us today to begin planning your new home or renovation!
+				</p>
 			</div>
 			<img src = "asset/truss/truss3.png">
 			<div class = "row" style = "justify-content : space-evenly; width : 100%;">
-				<p style = "color: rgb(252, 235, 192);">
+				<p style = "color: rgb(252, 235, 192); font-size : 24px">
 					Wholesale Timber & Viga <br>
 					300 Calle Industrial <br>
 					Bernalillo, NM 87004 <br>
@@ -70,8 +73,11 @@
 					Phone    505-867-1200 <br>
 					Fax        505-867-5770 <br>
 				</p>
-				<img src = "asset/pricelist.png">
-			</div>
+				<div style = "width : 35%;padding-top : 50px">
+					<a href = "2021_pricelist.pdf">
+					<img src = "asset/pricelist.png" style = "width : 100%">
+					</a>
+				</div>			</div>
 		</div>
 	</section>
 	<header class = "grid" style = "background-color : #ac2794; border-bottom: 10px solid black;
@@ -81,11 +87,11 @@
 	<section class = "grid" style = "background-color : #fcebc0; height : 400px;">
 	</section>
 
-	<script src = gallery.js></script>
-	<script src = soup.js></script>
+	<script type = "text/javascript" src = gallery.js></script>
+	<script type = "text/javascript" src = soup.js></script>
 	</script>
 	<script>
 		initSoup(true);
-		initGallery("asset/truss/photo/",30);
+		initGallery("asset/truss/photo/",25);
 	</script>
 </html>

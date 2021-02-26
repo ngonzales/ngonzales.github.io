@@ -1,5 +1,7 @@
 <html>
 	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" href="asset/mainHeader3.png">
+
 	<head>
 		<meta charset="utf-8">
 		<title>Wholesale Timeber & Viga</title>
@@ -28,12 +30,14 @@
 			padding : 8px;
 		}
 
-		.nav1 {
+		.nav1  {
 			color : white;
-			padding : 10px;
+			padding : 2px 10px;
 			text-decoration: none;
 			min-width : 20px;
 			text-align : center;
+			font-weight: bold;
+			font-size: 14px;
 		}
 
 		.nav1:hover {
@@ -44,19 +48,22 @@
 			font-size : 1rem;
 			display : flex;
 			justify-content : center;
-			margin : 0 10%;
+			margin : auto;
 			width : 80%;
 			text-decoration: none;
 			flex-wrap : wrap;
 		}
+		.black {color:black;}
 		.selected {color : grey;font-style: italic;}
 		.selected:hover {color : white;}
 		.comicsans {font-family : 'Comic Sans MS', Arial, Helvetica, sans-serif;}
+		.impact {font-family : Impact, Arial, Helvetica, sans-serif;}
+		.skeleton {display:block;margin:auto;}
 
 	</style>
 	<div style = "background-color : #fd6f27; height : 30px;">
 	</div>
-	<header class = grid style = "background-color : #000000; top-padding : 0">
+	<header class = grid style = "background-color : #000000; top-padding : 0;">
 		<div class = middle style = "padding: 0">
 			<nav>
 				<div class = "nav"  style = "border-bottom : 1px solid white;border-top : 1px solid white;">
@@ -74,7 +81,7 @@
 			</nav>
 		</div>
 	</header>
-	<header class = "grid" style = "background-color : #000000;">
+	<header class = "grid" style = "background-color : #000000;border: 0px;">
 		<div class = "middle" style = " justify-content : center;flex-flow:nowrap;white-space:nowrap;margin:auto">
 			<img src = "asset/mainHeader1.png" style = "max-width : 23%;width : auto; height : auto">
 			<img src = "asset/mainHeader2.png" style = "max-width : 54%;width : auto; height : auto">
@@ -82,18 +89,18 @@
 		</div>
 	</header>
 <!-- Truss -->
-	<header  class = "grid" style = "background-color : #fd6f27">
-		<img class = "middle" src = "asset/trussHeader.png"> 
+	<header  class = "grid" style = "background-color : #fd6f27;position:relative;height : 90px;">
+		<img class = "middle" src = "asset/trussHeader.png" style = "position:absolute;top:10px;left:5px"> 
 	</header>
 
 	<section class = "grid" style = "background-color : #656366">
-		<div class = "middle row" >
-			<div style = "flex :  650px;">
+		<div class = "middle row">
+			<div style = "flex :  600px;padding : 20px 0 0 4px;">
 				<img src = "asset/truss1.jpg" style = " max-width : 100%;">
 			</div>
-			<div style = "flex :  310px;">
+			<div style = "flex :  310px; margin-top: 50px">
 				<div class = "text" >
-					<img src = "asset/trussText.png" style = "max-width : 100%; margin : auto">
+					<img src = "asset/trussText.png" class = "skeleton">
 					<p>Our heavy timber and viga trusses create, in your home, a timeless grandeur. We offer designs, simple to complex, that are unsurpassed in appearance. We can also provide all necessary engineering. Come and meet with us today to begin planning your new home or renovation!</p>
 				</div>
 			</div>
@@ -104,14 +111,33 @@
 		<img class = "middle" src = "asset/lumberHeader.png"> 
 	</header>
 	<section class = "grid" style = "background-color : #ffffff">
-		<div class = "middle row">
-			<div style = "width : 60%;">
-				<img src = "asset/lumber1.jpg" style = "width : 100%">
+		<div class = "middle row" style = "justify-content : center">
+			<nav style = "width : 100%;">
+				<div class = "nav"  style = "border-bottom : 1px solid white;border-top : 1px solid white;">
+					<a class = "nav1 black selected" href = "index.html"  >Home          </a>
+					<a class = "nav1 black"          href = "truss.html"  >Trusses       </a>
+					<a class = "nav1 black"          href = "viga.html"   >Vigas         </a>
+					<a class = "nav1 black"          href = "latilla.html">Latillas      </a>
+					<a class = "nav1 black"          href = "lumber.html" >Rough Sawn    </a>
+					<a class = "nav1 black"          href = "corbel.html" >Corbels       </a>
+					<a class = "nav1 black"          href = "carving.html">Carving       </a>
+					<a class = "nav1 black"          href = "door.html"   >Doors         </a>
+					<a class = "nav1 black"          href = "other.html"  >Other Products</a>
+					<a class = "nav1 black"          href = "contact.html">Contact Us    </a>
+				</div>
+			</nav>
+
+			<div style = "position: relative; width:600px;height: 600px;">
+				<div style = "width : 90%; top: 0px; left: 0px; position: absolute;">
+					<img src = "asset/lumber1.jpg" style = "width : 100%">
+				</div>
+				<div style=" bottom: 35px; left: 0px; position: absolute;width:65.4%"><img src = "asset/lumber3.png"></div>
+				<div style=" bottom: 15px; right: 0;z-index: 0; position: absolute; width : 42.7%;"><img src = "asset/lumber4.jpg"></div>
 			</div>
-			<div style = "width  : 40%">
+			<div style = "flex  : 400px;">
 				<div class = "text">
-					<img src = "asset/lumberText.png">
-					<p>
+					<img class = "skeleton" src = "asset/lumberText.png">
+					<p style ="font-size: 22px">
 						Rough-Sawn Lumber
 						Wholesale Timber & Viga produces its own rough-sawn lumber. Save money by buying directly from the mill. We can produce lumber of any size up to 24 inch by 24 inch and lengths up to 32 feet long. We produce custom cut rough-sawn orders with little lead time. We cut ponderosa pine, spruce, and douglas fir.</p>
 				</div>
@@ -129,9 +155,9 @@
 			</div>
 			<div style = "flex:310px">
 				<div class = "text">
-					<img src = "asset/vigaText.png">
+					<img src = "asset/vigaText.png" class = "skeleton">
 					<p style = "font-size : 18px;">
-						Vigas
+						Vigas <br>
 						Wholesale Timber & Viga produces vigas of all diameters and lengths. Our ponderosa pine vigas are hand selected for straightness, then run through a machine peeler to remove the taper then hand drawknifed. We also produce dead standing spruce vigas. Our spruce can be hand peeled or left with the natural grey patina.
 					</p>
 				</div>
@@ -147,9 +173,9 @@
 			<div style = "flex : 450px;">
 				<img src = "asset/door1.jpg" style = "max-width : 100%">
 			</div>
-			<div style = "flex  : 450px">
+			<div style = "flex  : 450px; padding-left: 150px">
 				<div class = "text">
-					<img src = "asset/doorText.png">
+					<img src = "asset/doorText.png" class = "skeleton">
 					<p style = "font-size : 18px;">
 						Wholesale Timber & Viga has the finest craftsmen in the Southwest. We can design and build a stunning entry to your new home. We have, on staff, the finest carvers, carpenters and blacksmiths. Let us bring the beauty of the Southwest to your home.
 					</p>
@@ -174,7 +200,7 @@
 							
 							Latillas are sold in a variety of finishes. Left unpeeled they are used for coyote fencing. Our skilled craftsmen can peel the bark off, using traditional drawknives. Peel latillas are used in ceilings and shade structures.  Latillas can also be used to make furniture and be used in doors, gates and cabinets. 
 					</p>
-					<img src = "asset/latillaText.png" style = "max-width : 350px;">
+					<img src = "asset/latillaText.png" style = "max-width : 350px;" class = "skeleton">
 				</div>
 			</div>
 		</div>
@@ -190,7 +216,7 @@
 			</div>
 			<div style = "width  : 40%">
 				<div class = "text">
-					<img src = "asset/corbelText.png">
+					<img src = "asset/corbelText.png" class = "skeleton">
 					<p style = "font-size : 18px;">
 						<strong style = "font-size : 22px;">Corbel</strong>
 						[kôrbəl] an architectural bracket usually used to support a structural timber. Most corbels are supported by a post or a wall.
@@ -211,7 +237,7 @@
 			</div>
 			<div style = "width  : 40%">
 				<div class = "text">
-					<img src = "asset/carvingText.png">
+					<img src = "asset/carvingText.png" class = "skeletony">
 					<p style = "font-size : 18px;">
 						Here at Wholesale Timber and Viga we have the finest artisans and designers on staff. We have a wide variety of carving styles to choose from. We can also work with you to design something specific to your project. Having our own carvers and designers on staff along with the facilities to produce our own lumber we can provide you with the best value and speedy delivery.
 					</p>
@@ -248,47 +274,49 @@
 		<div class = "middle column">
 
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.4137387198257!2d-106.56113718445653!3d35.29569975862573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87227818035168e9%3A0x6c2bad29917c1304!2sWholesale%20Timber%20%26%20Viga%20LLC!5e0!3m2!1sen!2sus!4v1605286720493!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-			<div class = row>
+			<div class = "row impact">
 				<div class = text style = "width : 50%;">
-					<p class = comicsans style = "align : left; font-size : 48px">
+					<p class = comicsans style = "text-align : left; font-size : 48px">
 					300 Calle industrial
 					Bernalillo, NM 87004
 					505-867-1200
 					</p>
-					<p>Hours of operation</p>
-					<hr>
-					<table style = "color : white; width : 50%;">
-						<tr>
-							<th>Monday</th>
-							<th>8am-5pm</th>
-						</tr>
-						<tr>
-							<th>Tuesday</th>
-							<th>8am-5pm</th>
-						</tr>
-						<tr>
-							<th>Wednesday</th>
-							<th>8am-5pm</th>
-						</tr>
-						<tr>
-							<th>Thursday</th>
-							<th>8am-5pm</th>
-						</tr>
-						<tr>
-							<th>Friday</th>
-							<th>8am-5pm</th>
-						</tr>
-						<tr>
-							<th>Saturday</th>
-							<th>Closed</th>
-						</tr>
-						<tr>
-							<th>Sunday</th>
-							<th>Closed</th>
-						</tr>
-					</table>
+					<div style = "margin : auto; width : 320px;padding-top : 50px">
+						<p class = impact style = "text-align : left">Hours of operation</p>
+						<hr style = "width : 200px;">
+						<table style = "color : white;width : 220px; text-align : left">
+							<tr>
+								<th>Monday</th>
+								<th>8am-5pm</th>
+							</tr>
+							<tr>
+								<th>Tuesday</th>
+								<th>8am-5pm</th>
+							</tr>
+							<tr>
+								<th>Wednesday</th>
+								<th>8am-5pm</th>
+							</tr>
+							<tr>
+								<th>Thursday</th>
+								<th>8am-5pm</th>
+							</tr>
+							<tr>
+								<th>Friday</th>
+								<th>8am-5pm</th>
+							</tr>
+							<tr>
+								<th>Saturday</th>
+								<th>Closed</th>
+							</tr>
+							<tr>
+								<th>Sunday</th>
+								<th>Closed</th>
+							</tr>
+						</table>
+					</div>
 				</div>
-				<div style = "width : 30%">
+				<div style = "width : 35%;padding-top : 50px">
 					<a href = "2021_pricelist.pdf">
 					<img src = "asset/pricelist.png" style = "width : 100%">
 					</a>
@@ -307,6 +335,5 @@
 
 <script src = soup.js></script>
 <script>
-	console.log("v2.2");
 	initSoup();
 </script>

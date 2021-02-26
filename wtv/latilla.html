@@ -1,4 +1,6 @@
 <html>
+	<link rel="icon" type="image/png" href="asset/latilla/latilla1.png">
+	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="galleryStyle.css">
 	<div id = modal></div>
@@ -23,7 +25,7 @@
 			color : pink;
 		}
 	</style>
-	<header class = "grid" style = "background-color : #1692d0; border-bottom: 10px solid #fff697; border-top : 10px solid #fff697;">
+	<header class = "grid" style = "background-color : #1692d0; border-bottom: 10px solid #fff697; border-top : 10px solid #fff697;height : 50px;align-content : center;">
 			<nav class = middle>
 				<div style = "display : flex; width:100%; justify-content : space-evenly">
 					<a class = "nav"        href = "index.html"  >Home          </a><div class = vl></div>
@@ -76,7 +78,7 @@
 	<script src = gallery.js></script>
 	<script src = soup.js></script>
 	<script>
-		initSoup();
+		initSoup(false,true);
 		initGallery("asset/latilla/photo/",12);
 	</script>
 </html>

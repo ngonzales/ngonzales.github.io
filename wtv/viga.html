@@ -1,8 +1,11 @@
 <html>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="asset/viga/viga1.png">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="galleryStyle.css">
 	<div id = modal></div>
 	<style>
+		* {text-align:justify}
 		.vl {
 			border-right: 2px solid #fd5c0a;
 		}
@@ -11,7 +14,7 @@
 			color : yellow;
 			text-decoration: none;
 			font-weight: bold;
-			font-size : 20px;
+			font-size : 16px;
 		}
 		.nav:hover {
 			color : orange;
@@ -23,7 +26,7 @@
 			color : pink;
 		}
 	</style>
-	<header class = "grid" style = "background-color : #301e8a; border-bottom: 15px solid #fd1c0a; border-top : 15px solid #fd1c0a;">
+	<header class = "grid" style = "background-color : #301e8a; border-bottom: 15px solid #fd1c0a; border-top : 15px solid #fd1c0a; height : 50px; align-content : center">
 		<nav class = middle>
 			<div style = "display : flex; width:100%; justify-content : space-evenly">
 				<a class = "nav"        href = "index.html"   >Home          </a><div class = "vl"></div>
@@ -40,20 +43,20 @@
 			</div>
 		</nav>
 	</header>
-	<header  class = "grid" style = "background-color : white">
-		<div class = "middle column">
-			<img src = "asset/viga/viga1.png"> 
+	<header  class = "grid" style = "background-color : white; margin-bottom : -20px;">
+		<div class = "middle column" style = "">
+			<img src = "asset/viga/viga1.png" style = "align-self : end; top : -20px; position:relative"> 
 		</div>
 	</header>
 
 	<header class = "grid" style = "background-color : #301e8a; border-bottom: 20px solid #fd1c0a; border-top : 20px solid #fd1c0a;">
 		<p class = middle style = "color : #fdde01;font-size :66px;margin:auto;padding : 5">Photo Gallery</p>
 	</header>
-	<section class = "grid" style = "background-color : black">
-		<div class = "column middle">
-			<div id = "photoGallery"></div>
-			<p style = "color : white;">
-				<strong>Viga</strong>  vi•ga [vee-guh] A heavy timber rafter made of a handhewn log used in Native American and Spanish Colonial Architecture in the Southwest.<br>
+	<section class = "grid" style = "background-color : black; font-family : Arial, Helvetica, adobe-helvetica, Arial Narrow">
+		<div class = "middle column">
+			<div id = "photoGallery" style = "width : 85%; padding : 40px 0 40px 0;"></div>
+			<p style = "color : white; width : 90%; font-size : 20px;">
+				<strong style ="font-size : 26px">Viga</strong>  vi•ga [vee-guh] A heavy timber rafter made of a handhewn log used in Native American and Spanish Colonial Architecture in the Southwest.<br>
 				<br>
 				We start with raw material and with skilled artisans produce beautiful vigas and latillas that add a warmth and charm to your home
 			</p>
@@ -64,21 +67,26 @@
 	</header>
 	<section class = "grid" style = "background-color : black">
 		<div class = "row middle" style = "color : white;">
-			<div class = "column">
-				<p>
-					<strong>Portals</strong><br>
-					At Wholesale Timber & Viga we can provide you with everything you need to build the shade structure you need. Our staff can help you with the design and custom fit all the components.
-				</p>
-				<img src = "asset/viga/viga4.png">
-			</div>
-			<div class = "column">
-				<img src = "asset/viga/viga3.jpg">
-				<p>
+			<div class = "column" style = "flex : 300px;">
+				<div style = "width : 210px; font-size:13px; color : #999999; font-family : Arial black; font-weight:bold; padding-top : 50px;">
+					<p style = "text-align : center; font-size:16px;">Portals</p>
+					<p>
+						At Wholesale Timber & Viga we can provide you with everything you need to build the shade structure you need. Our staff can help you with the design and custom fit all the components.
+					</p>
+				</div>
+				<p style = "font-family : Trebuchet MS; font-size : 26px; padding : 40px 0 60px 0;text-align : center;">
 					300 Calle Industrial <br>
 					Bernalillo, NM 87004 <br>
 					Phone 505-867-1200 <br>
 					Fax 505-867-5770
 				</p>
+				<a href = "2021_pricelist.pdf">
+					<img src = "asset/pricelist.png" style = "width : 100%">
+				</a>
+			</div>
+			<div class = "column" style = "flex : 400px;">
+				<img src = "asset/viga/viga3.jpg">
+				<img src = "asset/viga/viga2.png">
 			</div>
 		</div>
 	</section>
