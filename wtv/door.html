@@ -1,4 +1,8 @@
 <html>
+	<!-- GOOGLE Font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
 	<link rel="icon" type="image/png" href="asset/door/door2.png">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="galleryStyle.css">
@@ -20,7 +24,9 @@
 		header {
 			border-bottom: 10px solid black;
 			border-top   : 10px solid black;
-			min-height : 100px;
+		}
+		.blank {
+			height : 80px;
 		}
 		ul {
 			list-style-type : none;
@@ -50,131 +56,165 @@
 			width : 80%;
 			text-decoration: none;
 		}
+		.doorContainer {
+			justify-content : space-evenly;
+		}
 		
 
 	</style>
 	<div style = "background-color : #eac090; height : 30px;">
 	</div>
-	<header class = grid style = "background-color : #000000; top-padding : 0">
+	<header class = grid style = "background-color : #000000; top-padding : 0;">
 		<div class = middle style = "padding: 0">
 			<nav>
 				<div class = "nav"  style = "border-bottom : 1px solid white;border-top : 1px solid white;">
-					<a class = "nav1" href = "index.html" >Home</a>
-					<a class = "nav1" href = "truss.html">Trusses</a>
-					<a class = "nav1" href = "viga.html">Vigas</a>
-					<a class = "nav1" href = "latilla.html">Latillas</a>
-					<a class = "nav1" href = "lumber.html">Rough Sawn</a>
-					<a class = "nav1" href = "corbel.html">Corbels</a>
-					<a class = "nav1" href = "carving.html">Carving</a>
-					<a class = "nav1" href = "door.html">Doors</a>
-					<a class = "nav1" href = "other.html">Other Products</a>
-					<a class = "nav1" href = "contact.html">Contact Us</a>
+					<a class = "nav1 selected" href = "index.html"  >Home          </a>
+					<a class = "nav1"          href = "truss.html"  >Trusses       </a>
+					<a class = "nav1"          href = "viga.html"   >Vigas         </a>
+					<a class = "nav1"          href = "latilla.html">Latillas      </a>
+					<a class = "nav1"          href = "lumber.html" >Rough Sawn    </a>
+					<a class = "nav1"          href = "corbel.html" >Corbels       </a>
+					<a class = "nav1"          href = "carving.html">Carving       </a>
+					<a class = "nav1"          href = "door.html"   >Doors         </a>
+					<a class = "nav1"          href = "other.html"  >Other Products</a>
+					<a class = "nav1"          href = "contact.html">Contact Us    </a>
 				</div>
 			</nav>
 		</div>
 	</header>
-	<header class = "grid" style = "background-color : #000000;">
-		<div class = "middle row" style = " justify-content : center;">
-			<img src = "asset/mainHeader1.png">
-			<img src = "asset/mainHeader2.png">
-			<img src = "asset/mainHeader3.png">
+	<header class = "grid" style = "background-color : #000000;border: 0px;">
+		<div class = "middle" style = " justify-content : center;flex-flow:nowrap;white-space:nowrap;margin:auto">
+			<img src = "asset/mainHeader1.png" style = "max-width : 23%;width : auto; height : auto">
+			<img src = "asset/mainHeader2.png" style = "max-width : 54%;width : auto; height : auto">
+			<img src = "asset/mainHeader3.png" style = "max-width : 23%;width : auto; height : auto">
 		</div>
 	</header>
 <!-- Truss -->
-	<header  class = "grid" style = "background-color : #eac090">
-		<img class = "middle" src = "asset/door/door1.png"> 
+	<header  class = "grid" style = "background-color : #eac090; text-align : center">
+			<div class = "middle" style = "width : 100%;"><img src = "asset/door/door1.png"></div>
 	</header>
 
+	<style>
+		.door {
+			/*position : relative;*/
+			text-align : center;
+		}
+		.doorText {
+			position : relative;
+			bottom : 80px;
+			font-size : 28px;
+			font-family : 'Abril Fatface';
+		}
+	</style>
 	<section class = "grid" style = "background-color : #235f6a">
-		<div class = "middle row" >
-			<div style = "width : 100%;">
+		<div class = "middle row doorContainer">
+			<div class = "door" style = "padding-top : 60px">
 				<img src = "asset/door/door2.png" style = "width : 100%;">
+				<p class = "doorText" style = "color : black">The Tripoli Door</p>
 			</div>
 		</div>
 	</section>
 <!-- Lumber -->
-	<header  class = "grid" style = "background-color : #cd9967">
+	<header  class = "grid blank" style = "background-color : #cd9967">
 	</header>
 	<section class = "grid" style = "background-color : #ffffff">
-		<div class = "middle row" style = "justify-content : space-evenly;">
-			<div style = "">
+		<div class = "middle row doorContainer" style = "padding-top : 10px;">
+			<div class = "door">
 				<img src = "asset/door/door3.png" style = "max-height : 800px;">
+				<p class = "doorText" style = "color : white; bottom : 50px;">The Alegre Door</p>
 			</div>
-			<div style = "">
+			<div class = "door">
 				<img src = "asset/door/door4.png" style = "max-height : 800px;">
+				<p class = "doorText" style = "color : white; bottom : 60px;">The Abique Door</p>
 			</div>
 		</div>
 	</section>
 <!-- Viga -->
-	<header  class = "grid" style = "background-color : #59a55d"></header>
+	<header  class = "grid blank" style = "background-color : #59a55d"></header>
 	<section class = "grid" style = "background-color : #c7cfa8">
-		<div class = "middle row">
-			<div style = "width : 60%;">
-				<img src = "asset/door/door5.png" style = "width : 100%;">
+		<div class = "middle row doorContainer">
+			<div class = "door">
+				<img src = "asset/door/door5.png" style = "">
+				<p class = "doorText" style = "color : #969C81; bottom : 60px;">The Santiago Gate</p>
 			</div>
-			<div style = "width : 60%;">
-				<img src = "asset/door/door6.png" style = "width : 100%;">
+			<div class = "door">
+				<img src = "asset/door/door6.png" style = "">
+				<p class = "doorText" style = "color : #969C81; bottom : 60px;">The Milan Door</p>
 			</div>
 		</div>
 	</section>
 <!-- Door -->
-	<header  class = "grid" style = "background-color : #c24517"></header>
+	<header  class = "grid blank" style = "background-color : #c24517"></header>
 	<section class = "grid" style = "background-color : #656366">
-		<div class = "middle row">
-			<div style = "width : 48%;">
+		<div class = "middle row doorContainer">
+			<div class = "door">
 				<img src = "asset/door/door7.png" style = "width : 100%;">
+				<p class = "doorText" style = "color : #D36100; bottom : 60px;">The Monteleon</p>
+
 			</div>
-			<div style = "width : 40%;">
+			<div class = "door">
 				<img src = "asset/door/door8.png" style = "width : 100%;">
+				<p class = "doorText" style = "color : #D36100; bottom : 40px;">The Estrella Door</p>
 			</div>
 		</div>
 	</section>
 <!-- Latilla -->
-	<header  class = "grid" style = "background-color : #e0ad5e"></header>
+	<header  class = "grid blank" style = "background-color : #e0ad5e"></header>
 	<section class = "grid" style = "background-color : #ffffff">
-		<div class = "middle row">
-			<div style = "width : 60%;">
-				<img src = "asset/door/door9.png" style = "width : 100%;">
+		<div class = "middle row doorContainer"  style = "padding-top : 10px;">
+			<div class = "door">
+				<img src = "asset/door/door9.png" >
+				<p class = "doorText" style = "color : white; bottom : 40px;">The Puebla Door</p>
 			</div>
-			<div style = "width : 30%;">
-				<img src = "asset/door/door10.png" style = "width : 100%;">
+			<div class = "door">
+				<img src = "asset/door/door10.png">
+				<p class = "doorText" style = "color : black; bottom : 0px;">The La Paz Door</p>
 			</div>
 		</div>	</section>
 <!-- Corbels -->
-	<header  class = "grid" style = "background-color : #c7a9a6"></header>
+	<header  class = "grid blank" style = "background-color : #c7a9a6"></header>
 	<section class = "grid" style = "background-color : #000000">
-		<div class = "middle row">
-			<div style = "width : 60%;">
-				<img src = "asset/door/door11.png" style = "width : 100%;">
+		<div class = "middle row doorContainer">
+			<div class = "door">
+				<img src = "asset/door/door11.png">
+				<p class = "doorText" style = "color : black;">The Siena Door</p>
+
 			</div>
-			<div style = "width : 60%;">
-				<img src = "asset/door/door12.png" style = "width : 100%;">
+			<div class = "door">
+				<img src = "asset/door/door12.png">
+				<p class = "doorText" style = "color : black;">The Tulum Door</p>
 			</div>
 		</div>	</section>
 <!-- Carving -->
-	<header  class = "grid" style = "background-color : #bec4fe"></header>
+	<header  class = "grid blank" style = "background-color : #bec4fe"></header>
 	<section class = "grid" style = "background-color : #ffffff">
-		<div class = "middle row">
-			<div style = "width : 60%;">
-				<img src = "asset/door/door13.png" style = "width : 100%;">
+		<div class = "middle row doorContainer" style = "padding-top : 10px">
+			<div class = "door">
+				<img src = "asset/door/door13.png">
+				<p class = "doorText" style = "color : white;">The Mesilla Door</p>
+
 			</div>
-			<div style = "width : 60%;">
-				<img src = "asset/door/door14.png" style = "width : 100%;">
+			<div class = "door">
+				<img src = "asset/door/door14.png">
+				<p class = "doorText" style = "color : white;">The Loreto Door</p>
 			</div>
 		</div>	</section>
 <!-- Other -->
-	<header  class = "grid" style = "background-color : #1789e2"></header>
+	<header  class = "grid blank" style = "background-color : #1789e2"></header>
 	<section class = "grid" style = "background-color : #656366">
-		<div class = "middle row">
-			<div style = "width : 60%;">
-				<img src = "asset/door/door15.png" style = "width : 100%;">
+		<div class = "middle row doorContainer" style = "padding-top : 10px">
+			<div class = "door">
+				<img src = "asset/door/door14.png">
+				<p class = "doorText" style = "color : black;">The Tularosa Door</p>
+
 			</div>
-			<div style = "width : 60%;">
-				<!-- <img src = "asset/door/door16.png" style = "width : 100%;"> -->
+			<div class = "door">
+				<img src = "asset/door/door15.png">
+				<p class = "doorText" style = "color : black;">Los Ojos Door</p>
 			</div>
 		</div>	</section>
 <!-- Contact -->
-	<header  class = "grid" style = "background-color : #e32d66"></header>
+	<header  class = "grid blank" style = "background-color : #e32d66"></header>
 	<section class = "grid" style = "background-color : #000000">
 		<div class = "middle column">
 			<div id = "photoGallery" style = "width : 100%;"></div>
