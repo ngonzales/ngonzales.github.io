@@ -1,14 +1,24 @@
 
 let soupPadding = [];
+let addParallax = (speed) => {
+	let parallax = document.createElement("div");
+	parallax.classList.add("grid");
+	parallax.classList.add("parallax");
+	document.documentElement.appendChild(parallax);	
+	window.addEventListener('scroll',(e) => {
+		let scroll = window.pageYOffset;
+		parallax.style.top = -(scroll*speed)+"px";
+	});
+	return parallax;
+}
 let initSoup = (invert,latilla = false) => {
 
 	let names = ["Home","Truss","Viga","Lumber","Door","Latillas","Corbel","Carving","Other","Contact"]
 	let htmls = ["index","Truss","Viga","Lumber","Door","latilla","Corbel","Carving","Other","Contact"]
-	// let parallax = document.getElementById("parallax");
-	let parallax = document.createElement("div");
-	parallax.classList.add("grid");
+	let scrollMod = .5;
+	let parallax = addParallax(scrollMod);
+
 	if (latilla) parallax.classList.add("gridLatilla");
-	parallax.setAttribute("id","parallax");
 	// let soupContainers = document.getElementsByClassName("soupContainer");
 	let soupContainers = [document.createElement("div"),document.createElement("div")]
 	soupContainers.forEach(soup=>soup.classList.add("soupContainer"));
@@ -16,12 +26,8 @@ let initSoup = (invert,latilla = false) => {
 	soupContainers[1].classList.add("left");
 
 	soupContainers.forEach(soup=>parallax.appendChild(soup));
-	document.documentElement.appendChild(parallax);
-	let scrollMod = .5;
-	window.addEventListener('scroll',(e) => {
-		let scroll = window.pageYOffset;
-		parallax.style.top = -(scroll*scrollMod)+"px";
-	});
+
+
 	let h = document.documentElement.scrollHeight/100*1.5;
 	// let soupHeight = 500;
 	let maxWidth = 80;
@@ -70,4 +76,27 @@ let initSoup = (invert,latilla = false) => {
 			drawSoup();
 		}
 	}; f();
+	addImg();
+}
+
+let addImg = () => {
+	let parallax = addParallax(1);
+	for (let i = 0; i<1;++i){
+		let left = new Image();
+		left.src = "asset/carving/left.png";
+		left.classList.add("left");
+		// left.style.top = "850px";
+		left.style.top = 80+200*i+"vh";
+		console.log(80+100*i+"vh");
+		left.style.position = "relative";
+		let right = new Image();
+		right.src = "asset/carving/right.png";
+		right.classList.add("right");
+		// right.style.top = "850px";
+		right.style.top = 80+200*i+"vh";
+		right.style.position = "relative";
+		parallax.appendChild(left);
+		parallax.appendChild(right);
+	}
+
 }
