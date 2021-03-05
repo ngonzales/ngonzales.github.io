@@ -2,9 +2,10 @@
 	let currentIdx = 0;
 	let totalPictures = 0;
 
-	initGallery = (path,numOfPics,id="photoGallery") => {
+	initGallery = (path,numOfPics,id="photoGallery",size=150) => {
 
 		let photoGallery = document.getElementById(id);
+		photoGallery.style["grid-template-columns"] = "repeat(auto-fill, minmax("+size+"px, 1fr))";
 		let model = document.getElementById("modal");
 		let setPhoto = i => {
 			let pLs = document.getElementsByClassName("galleryPhoto");
@@ -35,6 +36,8 @@
 			fullImg.src = path+i+".jpg";
 			fullImg.classList = "galleryPhoto";
 			img.classList = "photo";
+			img.style.width = size;
+			img.style.height = size;
 			let index = photos.length;
 			img.onclick = () => setPhoto(index);
 			photoGallery.appendChild(img);

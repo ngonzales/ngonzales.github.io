@@ -27,7 +27,7 @@ img {
 	max-width : 100%;
 }
 
-#parallax {
+.parallax {
 	top : 0;
 	height : 0;
 	position : absolute;
@@ -38,6 +38,8 @@ img {
 	display : flex;
 	/*position : absolute;*/
 	flex-direction : column;
+    transition: 0s linear;
+    transition-property: background-position;
 }
 .soup {
 	/*padding : 2px;*/

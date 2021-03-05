@@ -1,14 +1,14 @@
 <html>
-	<link rel="icon" type="image/png" href="asset/corbel/corbel1.png">
+	<link rel="icon" type="image/png" href="asset/corbel/corbel2.png">
+	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="galleryStyle.css">
 	<div id = modal></div>
 	<style>
-		section {
-			min-height : 800px;
-		}
+
 		header {
-			min-height : 40px;
+			min-height : 50px;
+			align-content : center;
 		}
 		.vl {
 			border-right: 2px solid #fd5c0a;
@@ -18,7 +18,7 @@
 			color : yellow;
 			text-decoration: none;
 			font-weight: bold;
-			font-size : 20px;
+			font-size : 16px;
 		}
 		.nav:hover {
 			color : orange;
@@ -51,8 +51,8 @@
 		<div class = "column middle">
 			<img src ="asset/corbel/corbel1.png">
 			<img src ="asset/corbel/corbel2.png">
-			<p>
-				Corbel  [kôrbəl] an architectural bracket usually used to support a structural timber. Most corbels are supported by a post or a wall.
+			<p style = "width: 250px;align-self:start; font-family:helvetica;font-size:13px;padding:15px;">
+				<b>Corbel</b>  [kôrbəl] an architectural bracket usually used to support a structural timber. Most corbels are supported by a post or a wall.
 				<br><br>
 				Starting with sawn timber we produce a wide variety of corbels, cut specifically for your project.
 			</p>
@@ -62,38 +62,46 @@
 	<section class="grid" style = "background-color : black">
 		<div class = "middle column">
 			<img src ="asset/corbel/corbel3.png">
-			<p style = "color : white">
+			<p style = "color : white; padding: 16px 210px;">
 				Choose from our corbel patterns or create your own. At Wholesale Timber and Viga we cut all our corbel by the order. We can cut most orders the same day they are ordered.
 			</p>
 		</div>
 	</section>
 	<header class = "grid" style = "background-color : #4078cd; border-bottom: 10px solid #5ccc7d; border-top   : 10px solid #5ccc7d;"></header>	
 	<section class = "grid" style = "background-color : black">
-		<div class = "middle column">
-			<p>
+		<div class = "middle column" style = "padding : 10px;">
+			<p style = "color : white; padding : 0 230px">
 				Starting with sawn timber we produce a wide variety of corbels, cut specifically for your project.  We can cut any size and any pattern corbel. We can join your corbels to make any angle and we can hand carve into them too.
 			</p>
-			<div class = "row">
-				<img src ="asset/corbel/corbel4.png">
-				<img src ="asset/corbel/corbel5.png">
-				<img src ="asset/corbel/corbel6.png">
-			</div>
-			<p>
-				Photo Gallery
+			<p style = "color : yellow; align-self : start; font-size:24px;border-bottom: 2px outset yellow;">
+				Shelf and Mantel Corbels
 			</p>
-			<div style = "width : 90%">
-				<div id = "photoGallery"></div>
+			<div class = "row" style = "align-items : center; color : yellow;">
+				<div><img src ="asset/corbel/corbel4.png"></div>
+				<div class = "column" style = "width : auto;justify-content : space-evenly; height : 350px;"><p>The Niña</p><p>The Pinta</p><p>The Santa María</p></div>
+				<div><img src ="asset/corbel/corbel5.png"></div>
+				<div><img src ="asset/corbel/corbel6.png"></div>
 			</div>
-			<div class = "row" style = "justify-content : space-evenly; width : 100%;">
-				<p style = "font-size : 26px; color : white; font-family : 'Trebuchet MS';">
-300 Calle Industrial<br>
-Bernalillo, NM 87004<br>
-Phone 505-867-1200<br>
-Fax 505-867-5770
+			<div class = row style = "width : 80%">
+				<p style = "color : yellow; font-size : 48px; align-self:start;border-bottom: 2px solid yellow; width : 100%;margin : 16px;">
+					Photo Gallery
 				</p>
-				<img src = "asset/corbel/corbel8.png">
+				<div id = "photoGallery"></div>
+				<div class = "row" style = " width : 100%; top : -60px; position : relative;">
+					<p style = "font-size : 26px; color : white; font-family : 'Trebuchet MS';align-self : center;">
+						300 Calle Industrial<br>
+						Bernalillo, NM 87004<br>
+						Phone 505-867-1200<br>
+						Fax 505-867-5770
+					</p>
+						<a style = "align-self : end;"href = "2021_pricelist.pdf">
+							<img src = "asset/pricelist.png" style = "width : 100%">
+						</a>
+				</div>
+				<a href = "corbel.pdf">
+					<img src = "asset/corbel/corbel7.png" style = "width : 100%">
+				</a>
 			</div>
-			<img src = "asset/corbel/corbel7.png">
 		</div>
 	</section>
 	<header class = "grid" style = "background-color : #4078cd; border-bottom: 10px solid #5ccc7d; border-top   : 10px solid #5ccc7d;"></header>	
@@ -102,6 +110,6 @@ Fax 505-867-5770
 	</script>
 	<script>
 		initSoup(true);
-		initGallery("asset/corbel/photo/",11);
+		initGallery("asset/corbel/photo/",11,"photoGallery",100);
 	</script>
 </html>

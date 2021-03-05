@@ -76,10 +76,9 @@ let initSoup = (invert,latilla = false) => {
 			drawSoup();
 		}
 	}; f();
-	addImg();
 }
 
-let addImg = () => {
+let addSkeletons = () => {
 	let parallax = addParallax(1);
 	for (let i = 0; i<1;++i){
 		let left = new Image();
