@@ -40,6 +40,7 @@ img {
 	flex-direction : column;
     transition: 0s linear;
     transition-property: background-position;
+	width : 100px;
 }
 .soup {
 	/*padding : 2px;*/
@@ -57,7 +58,7 @@ img {
 	grid-template-areas  : "left middle right";
 }
 /*.gridLatilla {	grid-template-columns : auto min(1000px, calc(100vw - 250px)) auto;}*/
-.gridLatilla {	grid-template-columns : auto 1000px auto;}
+.gridLatilla {	grid-template-columns : auto min(1000px,calc(100vw - 200px)) auto;}
 
 .middle {
 	grid-area : middle;
@@ -100,3 +101,6 @@ img {
 	font-size : 25px;
 }
 
+.sans {
+	font-family : arial;
+}
