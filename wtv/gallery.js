@@ -1,9 +1,15 @@
 	let photos = [];
 	let currentIdx = 0;
 	let totalPictures = 0;
-
+	let captions;
+	readTextFile = (file) => {
+		var rawFile = new XMLHttpRequest();
+		rawFile.open("GET", file, false);
+		rawFile.onreadystatechange = () => {if(rawFile.readyState === 4) if(rawFile.status === 200 || rawFile.status == 0) captions =rawFile.responseText.split(/\r?\n/);}
+		rawFile.send(null);
+	}
 	initGallery = (path,numOfPics,id="photoGallery",size=150) => {
-
+		readTextFile(path+"/captions.txt");
 		let photoGallery = document.getElementById(id);
 		photoGallery.style["grid-template-columns"] = "repeat(auto-fill, minmax("+size+"px, 1fr))";
 		let model = document.getElementById("modal");
@@ -15,11 +21,16 @@
 			modal.style.display = "block";
 			pLs[i].style["padding-top"] = (innerHeight - pLs[i].height)/2;
 			currentIdx = i+1;
+			caption.innerHTML = captions[i];
 		}
 		let right = document.createElement("span");
 		let left = document.createElement("span");
-		right.classList = "chevron right"
-		left.classList = "chevron left"
+		let caption = document.createElement("p");
+		caption.classList = "caption";
+		right.classList = "right"
+		left.classList  = "left"
+		right.innerText = ">";
+		left.innerText  = "<";
 
 		let prev = document.createElement("button");
 		prev.classList = "navButton prevButton";
@@ -58,9 +69,17 @@
 		close.onclick = () => model.style.display = "none";
 		close.innerText = "X";
 		model.appendChild(close);
+		model.appendChild(caption);
 
+		onkeydown = (e) => {
 
+			if (model.style.display == "none"||!model.style.display) return
+			switch (e.key){
+				case "ArrowLeft" : setPhoto(currentIdx-1); break;
+				case "ArrowRight" : setPhoto(currentIdx+1); break;
+				default : model.style.display = "none";
+			}
 
-		onkeydown = (e) => {model.style.display = "none";}
+		}
 	}
 	// onkeydown = (e) => {setPhoto(currentIdx-1)}

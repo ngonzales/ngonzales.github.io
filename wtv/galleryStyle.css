@@ -6,9 +6,15 @@
 	align-items: space-evenly;
 	width : 100%;
 	gap : 5px;
-	
+	z-index : 1;
 }
-
+.caption {
+	color : white;
+	text-align : center;
+	font-size : 20px;
+	font-family : arial;
+	padding-top : 8px;
+}
 
 .photo{
 	/*background-color : black;*/
@@ -24,7 +30,7 @@
 #modal {
 	display : none;
 	position : fixed;
-	z-index : 1;
+	z-index : 2;
 	left : 0;
 	top  : 0;
 	width  : 100%;
@@ -38,8 +44,12 @@
 	top : 25%;
 	width : 100px;
 	height : 50%;
-	background-color : rgba(255,255,255,.5);
+	/*background-color : rgba(255,255,255,.5);*/
+	background-color : rgba(255,255,255,0);
 	border-style : none;
+	color : white;
+	font-size : 100px;
+	font-family : arial;
 }
 
 .nextButton {
