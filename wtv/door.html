@@ -42,19 +42,25 @@
 
 		.nav1 {
 			color : white;
-			padding : 10px;
+			padding : 0 4px;
 			text-decoration: none;
+			font-size : 16px;
 		}
 
 		.nav1:hover {
 			color : gray;
 		}
 		.nav {
-			display : flex;
-			justify-content : center;
-			margin : 0 10%;
-			width : 80%;
+			/*display : flex;*/
+			/*justify-content : center;*/
+			/*margin : 0 10%;*/
+			/*margin-left : calc(50% - 100px;);*/
+			width : min (100%,800px;);
+			/*width : 800px;*/
 			text-decoration: none;
+			text-align : center;
+			margin:auto;
+			
 		}
 		.doorContainer {
 			justify-content : space-evenly;
@@ -66,7 +72,7 @@
 	</div>
 	<header class = grid style = "background-color : #000000; top-padding : 0;">
 		<div class = middle style = "padding: 0">
-			<nav>
+			<nav style = "text-align : center;">
 				<div class = "nav"  style = "border-bottom : 1px solid white;border-top : 1px solid white;">
 					<a class = "nav1 selected" href = "index.html"  >Home          </a>
 					<a class = "nav1"          href = "truss.html"  >Trusses       </a>
